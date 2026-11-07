@@ -12,16 +12,19 @@
     "@types/react": "~19.3.0",
     "eslint": "^9.0.0",
     "eslint-config-expo": "~58.0.4",
+    "json-server": "^0.17.4",
     "prettier": "^3.9.10",
     "typescript": "~6.0.3"
   },
- "scripts": {
-  "start": "expo start",
-  "android": "expo start --android",
-  "ios": "expo start --ios",
-  "web": "expo start --web",
-  "lint": "expo lint",
-  "format": "prettier --write \"src/**/*.{ts,tsx}\""
-},
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "expo lint",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "server": "json-server --watch server/db.json --port 3000 --host 0.0.0.0",
+    "server:reset": "copy server\\db.seed.json server\\db.json"
+  },
   "private": true
 }
