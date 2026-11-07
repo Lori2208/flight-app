@@ -1,7 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { FavoritesStack, HomeStack } from './stacks';
+import { FavoritesStack, HomeStack, MoreStack } from './stacks';
 import type { MainTabParamList } from './types';
+import { ProfileScreen } from '@/features/profile/ProfileScreen';
 
 const Tab = createBottomTabNavigator<MainTabParamList>();
 
@@ -31,6 +32,17 @@ export function MainTabs() {
         component={FavoritesStack}
         options={{ title: 'Favorites', headerShown: false }}
       />
+
+      <Tab.Screen
+  name="ProfileTab"
+  component={ProfileScreen}
+  options={{ title: 'Profile' }}
+/>
+<Tab.Screen
+  name="MoreTab"
+  component={MoreStack}
+  options={{ title: 'More', headerShown: false }}
+/>
     </Tab.Navigator>
   );
 }

@@ -2,8 +2,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeScreen } from '@/features/search/HomeScreen';
 import { SearchResultsScreen } from '@/features/search/SearchResultsScreen';
 import { FavoritesScreen } from '@/features/favorites/FavoritesScreen';
-import type { FavoritesStackParamList, HomeStackParamList } from './types';
+import type { FavoritesStackParamList, HomeStackParamList, MoreStackParamList } from './types';
 import { FlightDetailsScreen } from '@/features/flights/FlightDetailsScreen';
+import { MoreScreen } from '@/features/more/MoreScreen';
+import { ComingSoonScreen } from '@/features/more/ComingSoonScreen';
+
 
 const Home = createNativeStackNavigator<HomeStackParamList>();
 
@@ -43,5 +46,19 @@ export function FavoritesStack() {
   options={{ title: 'Flight details' }}
 />
     </Favorites.Navigator>
+  );
+}
+
+const More = createNativeStackNavigator<MoreStackParamList>();
+
+export function MoreStack() {
+  return (
+    <More.Navigator>
+      <More.Screen name="More" component={MoreScreen} />
+      <More.Screen name="Settings" component={ComingSoonScreen} />
+      <More.Screen name="Help" component={ComingSoonScreen} />
+      <More.Screen name="About" component={ComingSoonScreen} />
+      <More.Screen name="Contact" component={ComingSoonScreen} />
+    </More.Navigator>
   );
 }
