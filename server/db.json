@@ -5,7 +5,7 @@
       "email": "demo@flights.com",
       "password": "123456",
       "name": "Demo User",
-      "avatar": "https://i.pravatar.cc/150?img=12"
+      "avatar": "https://ui-avatars.com/api/?name=Demo+User&background=2563eb&color=fff&size=150"
     }
   ],
   "flights": [
