@@ -12,6 +12,8 @@ import { loadSession } from '@/features/auth/session';
 import { MainTabs } from './MainTabs';
 import type { RootStackParamList } from './types';
 import { useAppTheme } from '@/theme/useAppTheme';
+import { loadThemeMode } from '@/theme/themeStorage';
+import { themeModeRestored } from '@/theme/themeSlice';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -21,9 +23,12 @@ export function RootNavigator() {
   const isRestoring = useAppSelector(selectIsRestoring);
   const { colors } = useAppTheme();
 
-  useEffect(() => {
-    loadSession().then((user) => dispatch(sessionRestored(user)));
-  }, [dispatch]);
+useEffect(() => {
+  Promise.all([loadSession(), loadThemeMode()]).then(([user, mode]) => {
+    if (mode) dispatch(themeModeRestored(mode));
+    dispatch(sessionRestored(user));
+  });
+}, [dispatch]);
 
  if (isRestoring) {
   return (

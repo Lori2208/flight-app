@@ -12,13 +12,16 @@ const themeSlice = createSlice({
   initialState,
   reducers: {
     themeModeChanged(state, action: PayloadAction<ThemeMode>) {
-      state.mode = action.payload;
-    },
+    state.mode = action.payload;
   },
-  
+   themeModeRestored(state, action: PayloadAction<ThemeMode>) {
+    state.mode = action.payload;
+  },
+  },
+
 });
 
-export const { themeModeChanged } = themeSlice.actions;
+export const { themeModeChanged, themeModeRestored } = themeSlice.actions;
 export default themeSlice.reducer;
 
 export const selectThemeMode = (state: RootState) => state.theme.mode;

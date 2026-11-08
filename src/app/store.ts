@@ -3,6 +3,7 @@ import { api } from '@/services/api';
 import authReducer from '@/features/auth/authSlice';
 import { authListener } from '@/features/auth/authListeners';
 import themeReducer from '@/theme/themeSlice';
+import { themeListener } from '@/theme/themeListeners';
 
 export const store = configureStore({
   reducer: {
@@ -11,7 +12,7 @@ export const store = configureStore({
     theme: themeReducer
   },
   middleware: (getDefault) =>
-    getDefault().prepend(authListener.middleware).concat(api.middleware),
+    getDefault().prepend(authListener.middleware, themeListener.middleware).concat(api.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
