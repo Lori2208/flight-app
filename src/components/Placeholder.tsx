@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { useAppTheme } from '@/theme/useAppTheme';
 
 type Props = { title: string; children?: React.ReactNode };
 
 export function Placeholder({ title, children }: Props) {
+  const { colors } = useAppTheme();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
+      <Text style={[styles.title, { color: colors.text }]}>{title}</Text>
       {children}
     </View>
   );

@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Pressable, ScrollView, StyleSheet, Text } from 'react-native';
 import type { MoreScreenProps, MoreStackParamList } from '@/navigation/types';
+import { useAppTheme } from '@/theme/useAppTheme';
 
 type MenuItem = {
   route: Exclude<keyof MoreStackParamList, 'More'>;
@@ -15,17 +16,23 @@ const ITEMS: MenuItem[] = [
 ];
 
 export function MoreScreen({ navigation }: MoreScreenProps<'More'>) {
+  const { colors } = useAppTheme();
+
   return (
     <ScrollView>
       {ITEMS.map((item) => (
         <Pressable
           key={item.route}
-          style={styles.row}
+          style={({ pressed }) => [
+            styles.row,
+            { borderBottomColor: colors.border, backgroundColor: colors.card },
+            pressed && { opacity: 0.6 },
+          ]}
           onPress={() => navigation.navigate(item.route)}
         >
-          <Ionicons name={item.icon} size={22} />
-          <Text style={styles.label}>{item.route}</Text>
-          <Ionicons name="chevron-forward" size={18} />
+          <Ionicons name={item.icon} size={22} color={colors.primary} />
+          <Text style={[styles.label, { color: colors.text }]}>{item.route}</Text>
+          <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
         </Pressable>
       ))}
     </ScrollView>
@@ -33,6 +40,12 @@ export function MoreScreen({ navigation }: MoreScreenProps<'More'>) {
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: 'row', alignItems: 'center', gap: 12, padding: 16 },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    padding: 16,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  },
   label: { flex: 1, fontSize: 16 },
 });

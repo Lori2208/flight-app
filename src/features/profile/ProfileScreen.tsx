@@ -3,6 +3,7 @@ import { Alert, Image, Pressable, ScrollView, StyleSheet, Text, View } from 'rea
 import { useAppDispatch, useAppSelector } from '@/app/hooks';
 import { loggedOut, selectCurrentUser } from '@/features/auth/authSlice';
 import { api } from '@/services/api';
+import { useAppTheme } from '@/theme/useAppTheme';
 
 function getInitials(name: string): string {
   return name
@@ -15,6 +16,7 @@ function getInitials(name: string): string {
 
 export function ProfileScreen() {
   const dispatch = useAppDispatch();
+  const { colors } = useAppTheme();
   const user = useAppSelector(selectCurrentUser);
 
   const handleLogout = () => {
@@ -39,18 +41,24 @@ export function ProfileScreen() {
         {user.avatar ? (
           <Image source={{ uri: user.avatar }} style={styles.avatar} />
         ) : (
-          <View style={[styles.avatar, styles.avatarFallback]}>
-            <Text style={styles.initials}>{getInitials(user.name)}</Text>
+          <View style={[styles.avatar, styles.avatarFallback, { backgroundColor: colors.primary }]}>
+            <Text style={[styles.initials, { color: colors.onPrimary }]}>
+              {getInitials(user.name)}
+            </Text>
           </View>
         )}
-        <Text style={styles.name}>{user.name}</Text>
-        <Text style={styles.email}>{user.email}</Text>
+        <Text style={[styles.name, { color: colors.text }]}>{user.name}</Text>
+        <Text style={[styles.email, { color: colors.textSecondary }]}>{user.email}</Text>
       </View>
 
+      {/* Dark mode toggle goes here in the next commit */}
 
-      <Pressable style={styles.logoutButton} onPress={handleLogout}>
-        <Ionicons name="log-out-outline" size={20} color="#d32f2f" />
-        <Text style={styles.logoutText}>Log out</Text>
+      <Pressable
+        style={[styles.logoutButton, { borderColor: colors.danger }]}
+        onPress={handleLogout}
+      >
+        <Ionicons name="log-out-outline" size={20} color={colors.danger} />
+        <Text style={[styles.logoutText, { color: colors.danger }]}>Log out</Text>
       </Pressable>
     </ScrollView>
   );
@@ -60,10 +68,10 @@ const styles = StyleSheet.create({
   container: { padding: 24, gap: 24 },
   header: { alignItems: 'center', gap: 6 },
   avatar: { width: 96, height: 96, borderRadius: 48 },
-  avatarFallback: { backgroundColor: '#2563eb', alignItems: 'center', justifyContent: 'center' },
-  initials: { color: '#fff', fontSize: 32, fontWeight: '700' },
+  avatarFallback: { alignItems: 'center', justifyContent: 'center' },
+  initials: { fontSize: 32, fontWeight: '700' },
   name: { fontSize: 22, fontWeight: '700', marginTop: 8 },
-  email: { fontSize: 15, opacity: 0.6 },
+  email: { fontSize: 15 },
   logoutButton: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -72,7 +80,6 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#d32f2f',
   },
-  logoutText: { color: '#d32f2f', fontSize: 16, fontWeight: '600' },
+  logoutText: { fontSize: 16, fontWeight: '600' },
 });
