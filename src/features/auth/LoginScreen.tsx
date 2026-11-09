@@ -7,10 +7,10 @@ import {
   Pressable,
   StyleSheet,
   Text,
-  TextInput,
   View,
 } from 'react-native';
 import { useAppDispatch } from '@/app/hooks';
+import { TextField } from '@/components/TextField';
 import { useAppTheme } from '@/theme/useAppTheme';
 import { useLoginMutation } from './authApi';
 import { loggedIn } from './authSlice';
@@ -44,11 +44,6 @@ export function LoginScreen() {
     }
   };
 
-  const inputStyle = [
-    styles.input,
-    { borderColor: colors.border, backgroundColor: colors.inputBackground, color: colors.text },
-  ];
-
   return (
     <KeyboardAvoidingView
       style={styles.container}
@@ -62,10 +57,8 @@ export function LoginScreen() {
         </Text>
       </View>
 
-      <TextInput
-        style={inputStyle}
+      <TextField
         placeholder="Email"
-        placeholderTextColor={colors.textSecondary}
         value={email}
         onChangeText={(text) => {
           setEmail(text);
@@ -78,10 +71,8 @@ export function LoginScreen() {
         returnKeyType="next"
       />
 
-      <TextInput
-        style={inputStyle}
+      <TextField
         placeholder="Password"
-        placeholderTextColor={colors.textSecondary}
         value={password}
         onChangeText={(text) => {
           setPassword(text);
@@ -111,6 +102,9 @@ export function LoginScreen() {
         )}
       </Pressable>
 
+      <Text style={[styles.hint, { color: colors.textSecondary }]}>
+        Demo: demo@flights.com / 123456
+      </Text>
     </KeyboardAvoidingView>
   );
 }
@@ -120,13 +114,6 @@ const styles = StyleSheet.create({
   header: { alignItems: 'center', gap: 6, marginBottom: 24 },
   title: { fontSize: 28, fontWeight: '700' },
   subtitle: { fontSize: 15 },
-  input: {
-    borderWidth: 1,
-    borderRadius: 10,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-    fontSize: 16,
-  },
   error: { fontSize: 14 },
   button: { borderRadius: 10, paddingVertical: 14, alignItems: 'center', marginTop: 4 },
   buttonDisabled: { opacity: 0.5 },

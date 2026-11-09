@@ -1,7 +1,9 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useMemo, useState } from 'react';
-import { FlatList, Modal, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { FlatList, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { SelectField } from '@/components/SelectField';
+import { TextField } from '@/components/TextField';
 import { useAppTheme } from '@/theme/useAppTheme';
 import { findAirport, searchAirports } from '../airports';
 
@@ -27,21 +29,12 @@ export function AirportPicker({ label, value, onChange, excludeCode }: Props) {
 
   return (
     <>
-      <Pressable
-        style={[styles.field, { borderColor: colors.border, backgroundColor: colors.inputBackground }]}
+      <SelectField
+        label={label}
+        value={selected ? `${selected.code} – ${selected.city}` : undefined}
+        placeholder="Select airport"
         onPress={() => setOpen(true)}
-        accessibilityRole="button"
-        accessibilityLabel={`${label}: ${selected ? selected.city : 'not selected'}`}
-      >
-        <Text style={[styles.fieldLabel, { color: colors.textSecondary }]}>{label}</Text>
-        {selected ? (
-          <Text style={[styles.fieldValue, { color: colors.text }]}>
-            {selected.code} – {selected.city}
-          </Text>
-        ) : (
-          <Text style={[styles.fieldValue, { color: colors.textSecondary }]}>Select airport</Text>
-        )}
-      </Pressable>
+      />
 
       <Modal visible={open} animationType="slide" onRequestClose={close}>
         <SafeAreaProvider>
@@ -53,13 +46,9 @@ export function AirportPicker({ label, value, onChange, excludeCode }: Props) {
               </Pressable>
             </View>
 
-            <TextInput
-              style={[
-                styles.search,
-                { borderColor: colors.border, backgroundColor: colors.inputBackground, color: colors.text },
-              ]}
+            <TextField
+              style={styles.search}
               placeholder="Search city or airport code"
-              placeholderTextColor={colors.textSecondary}
               value={query}
               onChangeText={setQuery}
               autoFocus
@@ -75,7 +64,7 @@ export function AirportPicker({ label, value, onChange, excludeCode }: Props) {
                   style={({ pressed }) => [
                     styles.row,
                     { borderBottomColor: colors.border },
-                    pressed && { opacity: 0.6 },
+                    pressed && styles.pressed,
                   ]}
                   onPress={() => {
                     onChange(item.code);
@@ -101,9 +90,6 @@ export function AirportPicker({ label, value, onChange, excludeCode }: Props) {
 }
 
 const styles = StyleSheet.create({
-  field: { borderWidth: 1, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 10, gap: 2 },
-  fieldLabel: { fontSize: 12, fontWeight: '600', textTransform: 'uppercase' },
-  fieldValue: { fontSize: 17, fontWeight: '600' },
   modal: { flex: 1, paddingHorizontal: 16 },
   modalHeader: {
     flexDirection: 'row',
@@ -112,14 +98,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
   },
   modalTitle: { fontSize: 20, fontWeight: '700' },
-  search: {
-    borderWidth: 1,
-    borderRadius: 10,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    fontSize: 16,
-    marginBottom: 8,
-  },
+  search: { marginBottom: 8 },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -127,6 +106,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
+  pressed: { opacity: 0.6 },
   code: { fontSize: 18, fontWeight: '700', width: 48 },
   rowText: { flex: 1 },
   city: { fontSize: 16, fontWeight: '600' },
