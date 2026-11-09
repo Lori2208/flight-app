@@ -42,3 +42,6 @@ yarn-error.*
 
 # environment
 .env
+
+# idea
+.idea/

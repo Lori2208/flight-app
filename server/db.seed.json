@@ -34,7 +34,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A1",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 98
     },
     {
@@ -48,7 +48,7 @@
       "aircraft": "Airbus A320",
       "gate": "C11",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 146
     },
     {
@@ -62,7 +62,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A13",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 126
     },
     {
@@ -76,7 +76,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 63
     },
     {
@@ -90,7 +90,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A12",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 70
     },
     {
@@ -104,7 +104,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C10",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 88
     },
     {
@@ -132,7 +132,7 @@
       "aircraft": "Embraer E195",
       "gate": "B8",
       "terminal": "3",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 80
     },
     {
@@ -146,7 +146,7 @@
       "aircraft": "Airbus A320",
       "gate": "C5",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 204
     },
     {
@@ -160,7 +160,7 @@
       "aircraft": "Embraer E195",
       "gate": "A8",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 202
     },
     {
@@ -174,7 +174,7 @@
       "aircraft": "Airbus A320",
       "gate": "A4",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 141
     },
     {
@@ -216,7 +216,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C7",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 74
     },
     {
@@ -244,7 +244,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B7",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 174
     },
     {
@@ -258,7 +258,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C9",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 126
     },
     {
@@ -314,7 +314,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A4",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 60
     },
     {
@@ -328,7 +328,7 @@
       "aircraft": "Airbus A320",
       "gate": "A11",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 81
     },
     {
@@ -356,7 +356,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B9",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 102
     },
     {
@@ -370,7 +370,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A10",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 189
     },
     {
@@ -398,7 +398,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C4",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 163
     },
     {
@@ -412,7 +412,7 @@
       "aircraft": "Embraer E195",
       "gate": "A13",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 87
     },
     {
@@ -426,7 +426,7 @@
       "aircraft": "Airbus A320",
       "gate": "B7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 260
     },
     {
@@ -468,7 +468,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C2",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 177
     },
     {
@@ -482,7 +482,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 93
     },
     {
@@ -496,7 +496,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B1",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 239
     },
     {
@@ -510,7 +510,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C12",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 222
     },
     {
@@ -524,7 +524,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B4",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 227
     },
     {
@@ -538,7 +538,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A1",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 167
     },
     {
@@ -566,7 +566,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 191
     },
     {
@@ -580,7 +580,7 @@
       "aircraft": "Airbus A320",
       "gate": "C10",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 119
     },
     {
@@ -608,7 +608,7 @@
       "aircraft": "Airbus A320",
       "gate": "A1",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 183
     },
     {
@@ -622,7 +622,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 56
     },
     {
@@ -664,7 +664,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B10",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 91
     },
     {
@@ -692,7 +692,7 @@
       "aircraft": "Embraer E195",
       "gate": "A6",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 106
     },
     {
@@ -720,7 +720,7 @@
       "aircraft": "Embraer E195",
       "gate": "C9",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 71
     },
     {
@@ -734,7 +734,7 @@
       "aircraft": "Airbus A320",
       "gate": "A6",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 102
     },
     {
@@ -762,7 +762,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A3",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 239
     },
     {
@@ -776,7 +776,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A13",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 136
     },
     {
@@ -790,7 +790,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A14",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 117
     },
     {
@@ -804,7 +804,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 110
     },
     {
@@ -818,7 +818,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C9",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 254
     },
     {
@@ -832,7 +832,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A5",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 106
     },
     {
@@ -846,7 +846,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B12",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 194
     },
     {
@@ -874,7 +874,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B7",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 123
     },
     {
@@ -916,7 +916,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C10",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 179
     },
     {
@@ -930,7 +930,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A7",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 206
     },
     {
@@ -944,7 +944,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B11",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 160
     },
     {
@@ -958,7 +958,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B9",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 197
     },
     {
@@ -986,7 +986,7 @@
       "aircraft": "Airbus A320",
       "gate": "B10",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 145
     },
     {
@@ -1000,7 +1000,7 @@
       "aircraft": "Embraer E195",
       "gate": "B7",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 206
     },
     {
@@ -1014,7 +1014,7 @@
       "aircraft": "Airbus A320",
       "gate": "B4",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 157
     },
     {
@@ -1028,7 +1028,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B3",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 174
     },
     {
@@ -1042,7 +1042,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C14",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 148
     },
     {
@@ -1056,7 +1056,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C14",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 105
     },
     {
@@ -1070,7 +1070,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 58
     },
     {
@@ -1112,7 +1112,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C8",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 91
     },
     {
@@ -1140,7 +1140,7 @@
       "aircraft": "Airbus A320",
       "gate": "C12",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 243
     },
     {
@@ -1154,7 +1154,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A5",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 46
     },
     {
@@ -1168,7 +1168,7 @@
       "aircraft": "Airbus A320",
       "gate": "C3",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 198
     },
     {
@@ -1196,7 +1196,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A1",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 122
     },
     {
@@ -1224,7 +1224,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B1",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 52
     },
     {
@@ -1252,7 +1252,7 @@
       "aircraft": "Embraer E195",
       "gate": "A8",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 183
     },
     {
@@ -1266,7 +1266,7 @@
       "aircraft": "Airbus A320",
       "gate": "B3",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 230
     },
     {
@@ -1294,7 +1294,7 @@
       "aircraft": "Airbus A320",
       "gate": "C4",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 215
     },
     {
@@ -1308,7 +1308,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 239
     },
     {
@@ -1322,7 +1322,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C6",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 204
     },
     {
@@ -1336,7 +1336,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 201
     },
     {
@@ -1350,7 +1350,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A12",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 108
     },
     {
@@ -1364,7 +1364,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B14",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 107
     },
     {
@@ -1378,7 +1378,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B8",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 184
     },
     {
@@ -1406,7 +1406,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B5",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 181
     },
     {
@@ -1420,7 +1420,7 @@
       "aircraft": "Airbus A320",
       "gate": "A12",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 181
     },
     {
@@ -1448,7 +1448,7 @@
       "aircraft": "Airbus A320",
       "gate": "B11",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 160
     },
     {
@@ -1462,7 +1462,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C9",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 218
     },
     {
@@ -1504,7 +1504,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A5",
       "terminal": "1",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 84
     },
     {
@@ -1518,7 +1518,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B1",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 113
     },
     {
@@ -1532,7 +1532,7 @@
       "aircraft": "Embraer E195",
       "gate": "A10",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 161
     },
     {
@@ -1560,7 +1560,7 @@
       "aircraft": "Embraer E195",
       "gate": "A10",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 52
     },
     {
@@ -1574,7 +1574,7 @@
       "aircraft": "Airbus A320",
       "gate": "A4",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 234
     },
     {
@@ -1588,7 +1588,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B8",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 148
     },
     {
@@ -1630,7 +1630,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B1",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 219
     },
     {
@@ -1644,7 +1644,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C4",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 189
     },
     {
@@ -1658,7 +1658,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A9",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 77
     },
     {
@@ -1672,7 +1672,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A3",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 230
     },
     {
@@ -1714,7 +1714,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A2",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 253
     },
     {
@@ -1728,7 +1728,7 @@
       "aircraft": "Airbus A320",
       "gate": "C1",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 171
     },
     {
@@ -1742,7 +1742,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A10",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 247
     },
     {
@@ -1756,7 +1756,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 210
     },
     {
@@ -1770,7 +1770,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B12",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 208
     },
     {
@@ -1784,7 +1784,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A6",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 68
     },
     {
@@ -1798,7 +1798,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B1",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 131
     },
     {
@@ -1812,7 +1812,7 @@
       "aircraft": "Embraer E195",
       "gate": "A4",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 72
     },
     {
@@ -1826,7 +1826,7 @@
       "aircraft": "Airbus A320",
       "gate": "A1",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 243
     },
     {
@@ -1840,7 +1840,7 @@
       "aircraft": "Embraer E195",
       "gate": "C1",
       "terminal": "3",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 62
     },
     {
@@ -1854,7 +1854,7 @@
       "aircraft": "Airbus A320",
       "gate": "A11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 222
     },
     {
@@ -1868,7 +1868,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B8",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 180
     },
     {
@@ -1896,7 +1896,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B13",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 249
     },
     {
@@ -1910,7 +1910,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C10",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 260
     },
     {
@@ -1924,7 +1924,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B6",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 135
     },
     {
@@ -1938,7 +1938,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C4",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 98
     },
     {
@@ -1952,7 +1952,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C8",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 137
     },
     {
@@ -1966,7 +1966,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A3",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 123
     },
     {
@@ -1994,7 +1994,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B13",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 198
     },
     {
@@ -2008,7 +2008,7 @@
       "aircraft": "Airbus A320",
       "gate": "C14",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 120
     },
     {
@@ -2022,7 +2022,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C2",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 214
     },
     {
@@ -2064,7 +2064,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A9",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 213
     },
     {
@@ -2078,7 +2078,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A10",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 213
     },
     {
@@ -2134,7 +2134,7 @@
       "aircraft": "Airbus A320",
       "gate": "B2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 185
     },
     {
@@ -2148,7 +2148,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A14",
       "terminal": "3",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 109
     },
     {
@@ -2162,7 +2162,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B13",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 244
     },
     {
@@ -2176,7 +2176,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C5",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 213
     },
     {
@@ -2190,7 +2190,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B13",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 187
     },
     {
@@ -2204,7 +2204,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B6",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 83
     },
     {
@@ -2218,7 +2218,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C9",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 104
     },
     {
@@ -2260,7 +2260,7 @@
       "aircraft": "Airbus A320",
       "gate": "B11",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 106
     },
     {
@@ -2274,7 +2274,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 45
     },
     {
@@ -2288,7 +2288,7 @@
       "aircraft": "Airbus A320",
       "gate": "C2",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 218
     },
     {
@@ -2316,7 +2316,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C3",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 133
     },
     {
@@ -2330,7 +2330,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 196
     },
     {
@@ -2344,7 +2344,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C6",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 152
     },
     {
@@ -2358,7 +2358,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C6",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 130
     },
     {
@@ -2386,7 +2386,7 @@
       "aircraft": "Airbus A320",
       "gate": "B4",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 91
     },
     {
@@ -2400,7 +2400,7 @@
       "aircraft": "Embraer E195",
       "gate": "A6",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 39
     },
     {
@@ -2428,7 +2428,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B13",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 121
     },
     {
@@ -2442,7 +2442,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A3",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 173
     },
     {
@@ -2456,7 +2456,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B13",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 190
     },
     {
@@ -2470,7 +2470,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C1",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 172
     },
     {
@@ -2484,7 +2484,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A8",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 214
     },
     {
@@ -2498,7 +2498,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A2",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 76
     },
     {
@@ -2512,7 +2512,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C11",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 221
     },
     {
@@ -2526,7 +2526,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B9",
       "terminal": "3",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 64
     },
     {
@@ -2540,7 +2540,7 @@
       "aircraft": "Airbus A320",
       "gate": "B4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 250
     },
     {
@@ -2554,7 +2554,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 119
     },
     {
@@ -2582,7 +2582,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A12",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 246
     },
     {
@@ -2596,7 +2596,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 209
     },
     {
@@ -2638,7 +2638,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B10",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 255
     },
     {
@@ -2666,7 +2666,7 @@
       "aircraft": "Airbus A320",
       "gate": "A10",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 56
     },
     {
@@ -2680,7 +2680,7 @@
       "aircraft": "Embraer E195",
       "gate": "C9",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 146
     },
     {
@@ -2694,7 +2694,7 @@
       "aircraft": "Airbus A320",
       "gate": "B5",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 237
     },
     {
@@ -2722,7 +2722,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C7",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 152
     },
     {
@@ -2736,7 +2736,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 67
     },
     {
@@ -2750,7 +2750,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A4",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 53
     },
     {
@@ -2806,7 +2806,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B10",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 142
     },
     {
@@ -2820,7 +2820,7 @@
       "aircraft": "Airbus A320",
       "gate": "B1",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 244
     },
     {
@@ -2848,7 +2848,7 @@
       "aircraft": "Airbus A320",
       "gate": "B14",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 95
     },
     {
@@ -2862,7 +2862,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C11",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 169
     },
     {
@@ -2904,7 +2904,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B13",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 153
     },
     {
@@ -2918,7 +2918,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A8",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 152
     },
     {
@@ -2988,7 +2988,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C2",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 83
     },
     {
@@ -3002,7 +3002,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B9",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 79
     },
     {
@@ -3016,7 +3016,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B7",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 192
     },
     {
@@ -3030,7 +3030,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B2",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 137
     },
     {
@@ -3044,7 +3044,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B2",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 75
     },
     {
@@ -3058,7 +3058,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A10",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 118
     },
     {
@@ -3072,7 +3072,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A11",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 173
     },
     {
@@ -3100,7 +3100,7 @@
       "aircraft": "Airbus A320",
       "gate": "A3",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 114
     },
     {
@@ -3114,7 +3114,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C3",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 78
     },
     {
@@ -3128,7 +3128,7 @@
       "aircraft": "Airbus A320",
       "gate": "C8",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 132
     },
     {
@@ -3142,7 +3142,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 98
     },
     {
@@ -3156,7 +3156,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B14",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 212
     },
     {
@@ -3170,7 +3170,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B13",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 174
     },
     {
@@ -3184,7 +3184,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C3",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 203
     },
     {
@@ -3198,7 +3198,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C14",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 111
     },
     {
@@ -3212,7 +3212,7 @@
       "aircraft": "Embraer E195",
       "gate": "B9",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 62
     },
     {
@@ -3226,7 +3226,7 @@
       "aircraft": "Airbus A320",
       "gate": "A7",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 167
     },
     {
@@ -3254,7 +3254,7 @@
       "aircraft": "Airbus A320",
       "gate": "A1",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 217
     },
     {
@@ -3296,7 +3296,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B11",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 55
     },
     {
@@ -3338,7 +3338,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C6",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 178
     },
     {
@@ -3352,7 +3352,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B1",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 134
     },
     {
@@ -3366,7 +3366,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A6",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 199
     },
     {
@@ -3380,7 +3380,7 @@
       "aircraft": "Airbus A320",
       "gate": "A6",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 247
     },
     {
@@ -3408,7 +3408,7 @@
       "aircraft": "Airbus A320",
       "gate": "A5",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 241
     },
     {
@@ -3422,7 +3422,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B9",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 160
     },
     {
@@ -3436,7 +3436,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B6",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 123
     },
     {
@@ -3450,7 +3450,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B7",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 137
     },
     {
@@ -3464,7 +3464,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C8",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 107
     },
     {
@@ -3478,7 +3478,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B10",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 114
     },
     {
@@ -3506,7 +3506,7 @@
       "aircraft": "Airbus A320",
       "gate": "C8",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 49
     },
     {
@@ -3534,7 +3534,7 @@
       "aircraft": "Airbus A320",
       "gate": "C13",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 79
     },
     {
@@ -3562,7 +3562,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Cancelled",
       "price": 78
     },
     {
@@ -3576,7 +3576,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B13",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 74
     },
     {
@@ -3604,7 +3604,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C7",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 106
     },
     {
@@ -3618,7 +3618,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 90
     },
     {
@@ -3632,7 +3632,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B3",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 61
     },
     {
@@ -3646,7 +3646,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C2",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 113
     },
     {
@@ -3674,7 +3674,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A6",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 133
     },
     {
@@ -3688,7 +3688,7 @@
       "aircraft": "Airbus A320",
       "gate": "A5",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 173
     },
     {
@@ -3744,7 +3744,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B9",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 103
     },
     {
@@ -3758,7 +3758,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C5",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 62
     },
     {
@@ -3772,7 +3772,7 @@
       "aircraft": "Embraer E195",
       "gate": "A11",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 125
     },
     {
@@ -3786,7 +3786,7 @@
       "aircraft": "Airbus A320",
       "gate": "A1",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 106
     },
     {
@@ -3814,7 +3814,7 @@
       "aircraft": "Airbus A320",
       "gate": "C7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 57
     },
     {
@@ -3842,7 +3842,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C6",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 141
     },
     {
@@ -3870,7 +3870,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A1",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 260
     },
     {
@@ -3884,7 +3884,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A14",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 223
     },
     {
@@ -3898,7 +3898,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B9",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 117
     },
     {
@@ -3926,7 +3926,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A5",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 254
     },
     {
@@ -3954,7 +3954,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A7",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 182
     },
     {
@@ -3968,7 +3968,7 @@
       "aircraft": "Airbus A320",
       "gate": "A7",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 234
     },
     {
@@ -3982,7 +3982,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 242
     },
     {
@@ -3996,7 +3996,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A10",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 167
     },
     {
@@ -4010,7 +4010,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A12",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 171
     },
     {
@@ -4038,7 +4038,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C14",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 164
     },
     {
@@ -4052,7 +4052,7 @@
       "aircraft": "Embraer E195",
       "gate": "A6",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 67
     },
     {
@@ -4066,7 +4066,7 @@
       "aircraft": "Airbus A320",
       "gate": "C8",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 239
     },
     {
@@ -4080,7 +4080,7 @@
       "aircraft": "Embraer E195",
       "gate": "C8",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 200
     },
     {
@@ -4094,7 +4094,7 @@
       "aircraft": "Airbus A320",
       "gate": "C4",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 218
     },
     {
@@ -4108,7 +4108,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B6",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 144
     },
     {
@@ -4122,7 +4122,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C13",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 256
     },
     {
@@ -4136,7 +4136,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C6",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 173
     },
     {
@@ -4150,7 +4150,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B9",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 129
     },
     {
@@ -4164,7 +4164,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A5",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 96
     },
     {
@@ -4178,7 +4178,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C12",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 161
     },
     {
@@ -4192,7 +4192,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A10",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 136
     },
     {
@@ -4220,7 +4220,7 @@
       "aircraft": "Airbus A320",
       "gate": "A4",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 182
     },
     {
@@ -4234,7 +4234,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A10",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 100
     },
     {
@@ -4262,7 +4262,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C13",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 179
     },
     {
@@ -4290,7 +4290,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C10",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 228
     },
     {
@@ -4304,7 +4304,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A1",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 86
     },
     {
@@ -4318,7 +4318,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A5",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 66
     },
     {
@@ -4332,7 +4332,7 @@
       "aircraft": "Embraer E195",
       "gate": "C9",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 73
     },
     {
@@ -4346,7 +4346,7 @@
       "aircraft": "Airbus A320",
       "gate": "A13",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 80
     },
     {
@@ -4374,7 +4374,7 @@
       "aircraft": "Airbus A320",
       "gate": "C14",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 250
     },
     {
@@ -4430,7 +4430,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 117
     },
     {
@@ -4458,7 +4458,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A8",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 230
     },
     {
@@ -4472,7 +4472,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C9",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 244
     },
     {
@@ -4486,7 +4486,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C13",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 173
     },
     {
@@ -4500,7 +4500,7 @@
       "aircraft": "Airbus A320",
       "gate": "C2",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 168
     },
     {
@@ -4514,7 +4514,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B14",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 68
     },
     {
@@ -4528,7 +4528,7 @@
       "aircraft": "Airbus A320",
       "gate": "C8",
       "terminal": "1",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 72
     },
     {
@@ -4542,7 +4542,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C1",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 211
     },
     {
@@ -4570,7 +4570,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B12",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 54
     },
     {
@@ -4584,7 +4584,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B7",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 235
     },
     {
@@ -4598,7 +4598,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B8",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 59
     },
     {
@@ -4612,7 +4612,7 @@
       "aircraft": "Embraer E195",
       "gate": "A3",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 174
     },
     {
@@ -4626,7 +4626,7 @@
       "aircraft": "Airbus A320",
       "gate": "A5",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 223
     },
     {
@@ -4640,7 +4640,7 @@
       "aircraft": "Embraer E195",
       "gate": "A4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 78
     },
     {
@@ -4654,7 +4654,7 @@
       "aircraft": "Airbus A320",
       "gate": "A13",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 196
     },
     {
@@ -4668,7 +4668,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A2",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 153
     },
     {
@@ -4682,7 +4682,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C1",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 98
     },
     {
@@ -4710,7 +4710,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A5",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 172
     },
     {
@@ -4724,7 +4724,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B1",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 227
     },
     {
@@ -4738,7 +4738,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A6",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 136
     },
     {
@@ -4752,7 +4752,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B3",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 86
     },
     {
@@ -4780,7 +4780,7 @@
       "aircraft": "Airbus A320",
       "gate": "B9",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 138
     },
     {
@@ -4794,7 +4794,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 255
     },
     {
@@ -4808,7 +4808,7 @@
       "aircraft": "Airbus A320",
       "gate": "A5",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 193
     },
     {
@@ -4822,7 +4822,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A13",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 182
     },
     {
@@ -4836,7 +4836,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B5",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 87
     },
     {
@@ -4850,7 +4850,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A12",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 140
     },
     {
@@ -4864,7 +4864,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B8",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 130
     },
     {
@@ -4892,7 +4892,7 @@
       "aircraft": "Embraer E195",
       "gate": "B6",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 183
     },
     {
@@ -4906,7 +4906,7 @@
       "aircraft": "Airbus A320",
       "gate": "B9",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 223
     },
     {
@@ -4920,7 +4920,7 @@
       "aircraft": "Embraer E195",
       "gate": "A6",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 184
     },
     {
@@ -4934,7 +4934,7 @@
       "aircraft": "Airbus A320",
       "gate": "B13",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 228
     },
     {
@@ -4948,7 +4948,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C13",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 74
     },
     {
@@ -4962,7 +4962,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C11",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 47
     },
     {
@@ -4976,7 +4976,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B3",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 56
     },
     {
@@ -4990,7 +4990,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A9",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 54
     },
     {
@@ -5004,7 +5004,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A1",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 144
     },
     {
@@ -5018,7 +5018,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 247
     },
     {
@@ -5060,7 +5060,7 @@
       "aircraft": "Airbus A320",
       "gate": "C4",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 250
     },
     {
@@ -5088,7 +5088,7 @@
       "aircraft": "Airbus A320",
       "gate": "A8",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 239
     },
     {
@@ -5102,7 +5102,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A4",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 160
     },
     {
@@ -5116,7 +5116,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 207
     },
     {
@@ -5144,7 +5144,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 252
     },
     {
@@ -5172,7 +5172,7 @@
       "aircraft": "Embraer E195",
       "gate": "B4",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 193
     },
     {
@@ -5186,7 +5186,7 @@
       "aircraft": "Airbus A320",
       "gate": "A11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 164
     },
     {
@@ -5200,7 +5200,7 @@
       "aircraft": "Embraer E195",
       "gate": "B3",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 208
     },
     {
@@ -5228,7 +5228,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 66
     },
     {
@@ -5256,7 +5256,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B9",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 143
     },
     {
@@ -5270,7 +5270,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B9",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Cancelled",
       "price": 192
     },
     {
@@ -5298,7 +5298,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C7",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 107
     },
     {
@@ -5312,7 +5312,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 109
     },
     {
@@ -5354,7 +5354,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B6",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 191
     },
     {
@@ -5368,7 +5368,7 @@
       "aircraft": "Airbus A320",
       "gate": "C12",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 119
     },
     {
@@ -5382,7 +5382,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B12",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 164
     },
     {
@@ -5396,7 +5396,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B5",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 68
     },
     {
@@ -5452,7 +5452,7 @@
       "aircraft": "Embraer E195",
       "gate": "A8",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 188
     },
     {
@@ -5466,7 +5466,7 @@
       "aircraft": "Airbus A320",
       "gate": "B12",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 202
     },
     {
@@ -5508,7 +5508,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C12",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 187
     },
     {
@@ -5522,7 +5522,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B7",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 189
     },
     {
@@ -5550,7 +5550,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B5",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 239
     },
     {
@@ -5564,7 +5564,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 120
     },
     {
@@ -5578,7 +5578,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 204
     },
     {
@@ -5592,7 +5592,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C3",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 123
     },
     {
@@ -5606,7 +5606,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A13",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 86
     },
     {
@@ -5620,7 +5620,7 @@
       "aircraft": "Airbus A320",
       "gate": "A12",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 154
     },
     {
@@ -5648,7 +5648,7 @@
       "aircraft": "Airbus A320",
       "gate": "B6",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 68
     },
     {
@@ -5662,7 +5662,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C7",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 189
     },
     {
@@ -5676,7 +5676,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B10",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 219
     },
     {
@@ -5704,7 +5704,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C7",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 74
     },
     {
@@ -5718,7 +5718,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A8",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 216
     },
     {
@@ -5732,7 +5732,7 @@
       "aircraft": "Embraer E195",
       "gate": "B3",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 254
     },
     {
@@ -5760,7 +5760,7 @@
       "aircraft": "Embraer E195",
       "gate": "C8",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 164
     },
     {
@@ -5788,7 +5788,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B10",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 179
     },
     {
@@ -5802,7 +5802,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B13",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 177
     },
     {
@@ -5816,7 +5816,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B2",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 231
     },
     {
@@ -5844,7 +5844,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C10",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 259
     },
     {
@@ -5872,7 +5872,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C9",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 219
     },
     {
@@ -5928,7 +5928,7 @@
       "aircraft": "Airbus A320",
       "gate": "B2",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 142
     },
     {
@@ -5942,7 +5942,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B8",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 39
     },
     {
@@ -5956,7 +5956,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A13",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 94
     },
     {
@@ -5970,7 +5970,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B6",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 179
     },
     {
@@ -5998,7 +5998,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A14",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 155
     },
     {
@@ -6012,7 +6012,7 @@
       "aircraft": "Embraer E195",
       "gate": "C3",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 79
     },
     {
@@ -6026,7 +6026,7 @@
       "aircraft": "Airbus A320",
       "gate": "B2",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 205
     },
     {
@@ -6040,7 +6040,7 @@
       "aircraft": "Embraer E195",
       "gate": "C5",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 148
     },
     {
@@ -6068,7 +6068,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A1",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 248
     },
     {
@@ -6082,7 +6082,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 61
     },
     {
@@ -6096,7 +6096,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B5",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 237
     },
     {
@@ -6110,7 +6110,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 205
     },
     {
@@ -6166,7 +6166,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C10",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 111
     },
     {
@@ -6208,7 +6208,7 @@
       "aircraft": "Airbus A320",
       "gate": "B6",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 259
     },
     {
@@ -6222,7 +6222,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 236
     },
     {
@@ -6250,7 +6250,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B12",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 202
     },
     {
@@ -6264,7 +6264,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A5",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 91
     },
     {
@@ -6278,7 +6278,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C11",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 203
     },
     {
@@ -6292,7 +6292,7 @@
       "aircraft": "Embraer E195",
       "gate": "C14",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 101
     },
     {
@@ -6376,7 +6376,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A5",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 211
     },
     {
@@ -6418,7 +6418,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 108
     },
     {
@@ -6460,7 +6460,7 @@
       "aircraft": "Airbus A320",
       "gate": "B4",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 239
     },
     {
@@ -6502,7 +6502,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A13",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 256
     },
     {
@@ -6516,7 +6516,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 54
     },
     {
@@ -6530,7 +6530,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A4",
       "terminal": "3",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 218
     },
     {
@@ -6544,7 +6544,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C2",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 202
     },
     {
@@ -6572,7 +6572,7 @@
       "aircraft": "Embraer E195",
       "gate": "C14",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 120
     },
     {
@@ -6586,7 +6586,7 @@
       "aircraft": "Airbus A320",
       "gate": "A4",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 66
     },
     {
@@ -6600,7 +6600,7 @@
       "aircraft": "Embraer E195",
       "gate": "B8",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 69
     },
     {
@@ -6628,7 +6628,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C5",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 49
     },
     {
@@ -6642,7 +6642,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A12",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 140
     },
     {
@@ -6670,7 +6670,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B2",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 42
     },
     {
@@ -6684,7 +6684,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A14",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 214
     },
     {
@@ -6712,7 +6712,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 51
     },
     {
@@ -6726,7 +6726,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B1",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 148
     },
     {
@@ -6740,7 +6740,7 @@
       "aircraft": "Airbus A320",
       "gate": "A5",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 77
     },
     {
@@ -6754,7 +6754,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B7",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 54
     },
     {
@@ -6768,7 +6768,7 @@
       "aircraft": "Airbus A320",
       "gate": "A7",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 243
     },
     {
@@ -6782,7 +6782,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B13",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 161
     },
     {
@@ -6796,7 +6796,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C9",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 108
     },
     {
@@ -6824,7 +6824,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A2",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 100
     },
     {
@@ -6838,7 +6838,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C14",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 253
     },
     {
@@ -6852,7 +6852,7 @@
       "aircraft": "Embraer E195",
       "gate": "C6",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 190
     },
     {
@@ -6866,7 +6866,7 @@
       "aircraft": "Airbus A320",
       "gate": "C4",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 118
     },
     {
@@ -6880,7 +6880,7 @@
       "aircraft": "Embraer E195",
       "gate": "A1",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 95
     },
     {
@@ -6922,7 +6922,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B12",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 189
     },
     {
@@ -6936,7 +6936,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B3",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 241
     },
     {
@@ -6950,7 +6950,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A12",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 240
     },
     {
@@ -6978,7 +6978,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C1",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 120
     },
     {
@@ -6992,7 +6992,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B3",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 99
     },
     {
@@ -7006,7 +7006,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C2",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 202
     },
     {
@@ -7034,7 +7034,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 81
     },
     {
@@ -7062,7 +7062,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B2",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 44
     },
     {
@@ -7076,7 +7076,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A6",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 80
     },
     {
@@ -7090,7 +7090,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B10",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 219
     },
     {
@@ -7118,7 +7118,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B12",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 106
     },
     {
@@ -7132,7 +7132,7 @@
       "aircraft": "Embraer E195",
       "gate": "A1",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 179
     },
     {
@@ -7174,7 +7174,7 @@
       "aircraft": "Airbus A320",
       "gate": "A5",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 164
     },
     {
@@ -7188,7 +7188,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A6",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 86
     },
     {
@@ -7202,7 +7202,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B8",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 253
     },
     {
@@ -7230,7 +7230,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C1",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 146
     },
     {
@@ -7244,7 +7244,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B5",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 257
     },
     {
@@ -7314,7 +7314,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B3",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 189
     },
     {
@@ -7342,7 +7342,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B11",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 194
     },
     {
@@ -7356,7 +7356,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B7",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 194
     },
     {
@@ -7398,7 +7398,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A5",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 237
     },
     {
@@ -7412,7 +7412,7 @@
       "aircraft": "Embraer E195",
       "gate": "C11",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 152
     },
     {
@@ -7454,7 +7454,7 @@
       "aircraft": "Airbus A320",
       "gate": "A14",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 102
     },
     {
@@ -7482,7 +7482,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C1",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 164
     },
     {
@@ -7496,7 +7496,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B10",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 127
     },
     {
@@ -7552,7 +7552,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B10",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 109
     },
     {
@@ -7566,7 +7566,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B5",
       "terminal": "1",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 116
     },
     {
@@ -7580,7 +7580,7 @@
       "aircraft": "Airbus A320",
       "gate": "A9",
       "terminal": "3",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 182
     },
     {
@@ -7608,7 +7608,7 @@
       "aircraft": "Airbus A320",
       "gate": "B11",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 115
     },
     {
@@ -7622,7 +7622,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A13",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 208
     },
     {
@@ -7636,7 +7636,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C8",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 146
     },
     {
@@ -7664,7 +7664,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 181
     },
     {
@@ -7692,7 +7692,7 @@
       "aircraft": "Embraer E195",
       "gate": "C2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 96
     },
     {
@@ -7706,7 +7706,7 @@
       "aircraft": "Airbus A320",
       "gate": "B6",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 114
     },
     {
@@ -7720,7 +7720,7 @@
       "aircraft": "Embraer E195",
       "gate": "A14",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 187
     },
     {
@@ -7734,7 +7734,7 @@
       "aircraft": "Airbus A320",
       "gate": "A9",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 136
     },
     {
@@ -7776,7 +7776,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C3",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 53
     },
     {
@@ -7790,7 +7790,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A13",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 234
     },
     {
@@ -7804,7 +7804,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A10",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 148
     },
     {
@@ -7818,7 +7818,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B1",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 90
     },
     {
@@ -7832,7 +7832,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C4",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 40
     },
     {
@@ -7874,7 +7874,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C3",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 130
     },
     {
@@ -7902,7 +7902,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A6",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 241
     },
     {
@@ -7916,7 +7916,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 51
     },
     {
@@ -7930,7 +7930,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A12",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 152
     },
     {
@@ -7958,7 +7958,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B11",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 172
     },
     {
@@ -7972,7 +7972,7 @@
       "aircraft": "Embraer E195",
       "gate": "A9",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 69
     },
     {
@@ -8042,7 +8042,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 114
     },
     {
@@ -8084,7 +8084,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 130
     },
     {
@@ -8112,7 +8112,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B14",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 243
     },
     {
@@ -8140,7 +8140,7 @@
       "aircraft": "Airbus A320",
       "gate": "C8",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 151
     },
     {
@@ -8154,7 +8154,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C1",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 162
     },
     {
@@ -8182,7 +8182,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C14",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 172
     },
     {
@@ -8196,7 +8196,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C12",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 127
     },
     {
@@ -8224,7 +8224,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 100
     },
     {
@@ -8238,7 +8238,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C4",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 135
     },
     {
@@ -8252,7 +8252,7 @@
       "aircraft": "Embraer E195",
       "gate": "B8",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 61
     },
     {
@@ -8266,7 +8266,7 @@
       "aircraft": "Airbus A320",
       "gate": "A8",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 43
     },
     {
@@ -8294,7 +8294,7 @@
       "aircraft": "Airbus A320",
       "gate": "C11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 132
     },
     {
@@ -8308,7 +8308,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B9",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 160
     },
     {
@@ -8350,7 +8350,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C12",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 66
     },
     {
@@ -8378,7 +8378,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B1",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 189
     },
     {
@@ -8420,7 +8420,7 @@
       "aircraft": "Airbus A320",
       "gate": "A7",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 194
     },
     {
@@ -8448,7 +8448,7 @@
       "aircraft": "Airbus A320",
       "gate": "A3",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 218
     },
     {
@@ -8462,7 +8462,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C12",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 94
     },
     {
@@ -8490,7 +8490,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C2",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 161
     },
     {
@@ -8504,7 +8504,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B13",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 66
     },
     {
@@ -8546,7 +8546,7 @@
       "aircraft": "Airbus A320",
       "gate": "B2",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 228
     },
     {
@@ -8574,7 +8574,7 @@
       "aircraft": "Airbus A320",
       "gate": "B7",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 180
     },
     {
@@ -8602,7 +8602,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 84
     },
     {
@@ -8616,7 +8616,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C9",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 49
     },
     {
@@ -8644,7 +8644,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A3",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 52
     },
     {
@@ -8686,7 +8686,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B4",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 123
     },
     {
@@ -8700,7 +8700,7 @@
       "aircraft": "Airbus A320",
       "gate": "A13",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 160
     },
     {
@@ -8742,7 +8742,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C14",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 244
     },
     {
@@ -8756,7 +8756,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A5",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 121
     },
     {
@@ -8770,7 +8770,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A13",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 40
     },
     {
@@ -8798,7 +8798,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C11",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 156
     },
     {
@@ -8826,7 +8826,7 @@
       "aircraft": "Airbus A320",
       "gate": "B7",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 142
     },
     {
@@ -8840,7 +8840,7 @@
       "aircraft": "Embraer E195",
       "gate": "B11",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 40
     },
     {
@@ -8854,7 +8854,7 @@
       "aircraft": "Airbus A320",
       "gate": "C14",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 167
     },
     {
@@ -8868,7 +8868,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 136
     },
     {
@@ -8896,7 +8896,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B11",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 134
     },
     {
@@ -8910,7 +8910,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A1",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 139
     },
     {
@@ -8924,7 +8924,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A12",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 93
     },
     {
@@ -8952,7 +8952,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C8",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 57
     },
     {
@@ -8966,7 +8966,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A4",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Cancelled",
       "price": 163
     },
     {
@@ -8980,7 +8980,7 @@
       "aircraft": "Airbus A320",
       "gate": "C11",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 111
     },
     {
@@ -8994,7 +8994,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B8",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 196
     },
     {
@@ -9036,7 +9036,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B6",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 180
     },
     {
@@ -9050,7 +9050,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B14",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Cancelled",
       "price": 89
     },
     {
@@ -9064,7 +9064,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A14",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 46
     },
     {
@@ -9078,7 +9078,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A9",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 177
     },
     {
@@ -9106,7 +9106,7 @@
       "aircraft": "Airbus A320",
       "gate": "B9",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 100
     },
     {
@@ -9120,7 +9120,7 @@
       "aircraft": "Embraer E195",
       "gate": "B3",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 183
     },
     {
@@ -9134,7 +9134,7 @@
       "aircraft": "Airbus A320",
       "gate": "B1",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 98
     },
     {
@@ -9148,7 +9148,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A1",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 171
     },
     {
@@ -9162,7 +9162,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B1",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 121
     },
     {
@@ -9190,7 +9190,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C11",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 103
     },
     {
@@ -9204,7 +9204,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B14",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 241
     },
     {
@@ -9232,7 +9232,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A3",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 222
     },
     {
@@ -9246,7 +9246,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B12",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 211
     },
     {
@@ -9260,7 +9260,7 @@
       "aircraft": "Airbus A320",
       "gate": "C3",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 44
     },
     {
@@ -9288,7 +9288,7 @@
       "aircraft": "Airbus A320",
       "gate": "A3",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 171
     },
     {
@@ -9302,7 +9302,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A4",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 159
     },
     {
@@ -9316,7 +9316,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 249
     },
     {
@@ -9330,7 +9330,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 191
     },
     {
@@ -9358,7 +9358,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 196
     },
     {
@@ -9372,7 +9372,7 @@
       "aircraft": "Embraer E195",
       "gate": "A8",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 193
     },
     {
@@ -9400,7 +9400,7 @@
       "aircraft": "Embraer E195",
       "gate": "B13",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 189
     },
     {
@@ -9428,7 +9428,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B4",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 186
     },
     {
@@ -9442,7 +9442,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 143
     },
     {
@@ -9470,7 +9470,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C5",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 232
     },
     {
@@ -9484,7 +9484,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A6",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 162
     },
     {
@@ -9526,7 +9526,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A7",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 244
     },
     {
@@ -9554,7 +9554,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C1",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 141
     },
     {
@@ -9568,7 +9568,7 @@
       "aircraft": "Airbus A320",
       "gate": "A11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 41
     },
     {
@@ -9582,7 +9582,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A13",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 171
     },
     {
@@ -9610,7 +9610,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 189
     },
     {
@@ -9624,7 +9624,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A9",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 188
     },
     {
@@ -9638,7 +9638,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A10",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 142
     },
     {
@@ -9694,7 +9694,7 @@
       "aircraft": "Airbus A320",
       "gate": "C14",
       "terminal": "1",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 68
     },
     {
@@ -9708,7 +9708,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C13",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 218
     },
     {
@@ -9736,7 +9736,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A7",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 58
     },
     {
@@ -9750,7 +9750,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B6",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 107
     },
     {
@@ -9778,7 +9778,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A14",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 78
     },
     {
@@ -9792,7 +9792,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C11",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 40
     },
     {
@@ -9806,7 +9806,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B10",
       "terminal": "2",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 186
     },
     {
@@ -9834,7 +9834,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C13",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 177
     },
     {
@@ -9848,7 +9848,7 @@
       "aircraft": "Airbus A320",
       "gate": "C13",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 69
     },
     {
@@ -9862,7 +9862,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C1",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 92
     },
     {
@@ -9890,7 +9890,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B10",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 86
     },
     {
@@ -9904,7 +9904,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B12",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 257
     },
     {
@@ -9918,7 +9918,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 214
     },
     {
@@ -9932,7 +9932,7 @@
       "aircraft": "Embraer E195",
       "gate": "A9",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 89
     },
     {
@@ -9946,7 +9946,7 @@
       "aircraft": "Airbus A320",
       "gate": "A3",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 73
     },
     {
@@ -9960,7 +9960,7 @@
       "aircraft": "Embraer E195",
       "gate": "B5",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 51
     },
     {
@@ -9974,7 +9974,7 @@
       "aircraft": "Airbus A320",
       "gate": "A4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 253
     },
     {
@@ -9988,7 +9988,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B6",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 181
     },
     {
@@ -10002,7 +10002,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B2",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 194
     },
     {
@@ -10016,7 +10016,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B6",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 163
     },
     {
@@ -10030,7 +10030,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B10",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 200
     },
     {
@@ -10044,7 +10044,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B11",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 142
     },
     {
@@ -10058,7 +10058,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 206
     },
     {
@@ -10072,7 +10072,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B8",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 172
     },
     {
@@ -10114,7 +10114,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A13",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 234
     },
     {
@@ -10128,7 +10128,7 @@
       "aircraft": "Airbus A320",
       "gate": "C3",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 138
     },
     {
@@ -10142,7 +10142,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 71
     },
     {
@@ -10156,7 +10156,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 260
     },
     {
@@ -10170,7 +10170,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C8",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 84
     },
     {
@@ -10198,7 +10198,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A8",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 144
     },
     {
@@ -10212,7 +10212,7 @@
       "aircraft": "Embraer E195",
       "gate": "A1",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 127
     },
     {
@@ -10254,7 +10254,7 @@
       "aircraft": "Airbus A320",
       "gate": "A3",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 138
     },
     {
@@ -10296,7 +10296,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A5",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 155
     },
     {
@@ -10352,7 +10352,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 134
     },
     {
@@ -10366,7 +10366,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A14",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 107
     },
     {
@@ -10380,7 +10380,7 @@
       "aircraft": "Airbus A320",
       "gate": "A4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 251
     },
     {
@@ -10408,7 +10408,7 @@
       "aircraft": "Airbus A320",
       "gate": "C13",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 209
     },
     {
@@ -10450,7 +10450,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 42
     },
     {
@@ -10492,7 +10492,7 @@
       "aircraft": "Embraer E195",
       "gate": "C1",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 204
     },
     {
@@ -10520,7 +10520,7 @@
       "aircraft": "Embraer E195",
       "gate": "A12",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 224
     },
     {
@@ -10534,7 +10534,7 @@
       "aircraft": "Airbus A320",
       "gate": "B12",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 114
     },
     {
@@ -10548,7 +10548,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C3",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 121
     },
     {
@@ -10576,7 +10576,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B14",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 132
     },
     {
@@ -10590,7 +10590,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C3",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 258
     },
     {
@@ -10660,7 +10660,7 @@
       "aircraft": "Airbus A320",
       "gate": "C10",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 104
     },
     {
@@ -10688,7 +10688,7 @@
       "aircraft": "Airbus A320",
       "gate": "C1",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 229
     },
     {
@@ -10702,7 +10702,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 226
     },
     {
@@ -10744,7 +10744,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C10",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 156
     },
     {
@@ -10772,7 +10772,7 @@
       "aircraft": "Embraer E195",
       "gate": "C10",
       "terminal": "2",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 119
     },
     {
@@ -10786,7 +10786,7 @@
       "aircraft": "Airbus A320",
       "gate": "B13",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 250
     },
     {
@@ -10842,7 +10842,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C9",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 185
     },
     {
@@ -10898,7 +10898,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A12",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 59
     },
     {
@@ -10968,7 +10968,7 @@
       "aircraft": "Airbus A320",
       "gate": "A3",
       "terminal": "2",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 160
     },
     {
@@ -10982,7 +10982,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B2",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 150
     },
     {
@@ -10996,7 +10996,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C4",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 205
     },
     {
@@ -11010,7 +11010,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 121
     },
     {
@@ -11024,7 +11024,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 128
     },
     {
@@ -11038,7 +11038,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C11",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Cancelled",
       "price": 82
     },
     {
@@ -11108,7 +11108,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C12",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 43
     },
     {
@@ -11150,7 +11150,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A1",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 137
     },
     {
@@ -11164,7 +11164,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B8",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 61
     },
     {
@@ -11206,7 +11206,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C5",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 109
     },
     {
@@ -11234,7 +11234,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A12",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 212
     },
     {
@@ -11248,7 +11248,7 @@
       "aircraft": "Airbus A320",
       "gate": "A10",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 118
     },
     {
@@ -11262,7 +11262,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C3",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 74
     },
     {
@@ -11276,7 +11276,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B12",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 73
     },
     {
@@ -11290,7 +11290,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B2",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 223
     },
     {
@@ -11304,7 +11304,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A12",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 144
     },
     {
@@ -11318,7 +11318,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C14",
       "terminal": "3",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 77
     },
     {
@@ -11332,7 +11332,7 @@
       "aircraft": "Embraer E195",
       "gate": "A1",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 107
     },
     {
@@ -11346,7 +11346,7 @@
       "aircraft": "Airbus A320",
       "gate": "A11",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 59
     },
     {
@@ -11374,7 +11374,7 @@
       "aircraft": "Airbus A320",
       "gate": "A3",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 47
     },
     {
@@ -11402,7 +11402,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B14",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 215
     },
     {
@@ -11416,7 +11416,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B7",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 227
     },
     {
@@ -11430,7 +11430,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C12",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 176
     },
     {
@@ -11458,7 +11458,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C7",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 51
     },
     {
@@ -11472,7 +11472,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B5",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 81
     },
     {
@@ -11486,7 +11486,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C9",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 251
     },
     {
@@ -11514,7 +11514,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B1",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 190
     },
     {
@@ -11528,7 +11528,7 @@
       "aircraft": "Airbus A320",
       "gate": "B6",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 221
     },
     {
@@ -11542,7 +11542,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A12",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 131
     },
     {
@@ -11612,7 +11612,7 @@
       "aircraft": "Embraer E195",
       "gate": "C13",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 165
     },
     {
@@ -11640,7 +11640,7 @@
       "aircraft": "Embraer E195",
       "gate": "C5",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 181
     },
     {
@@ -11654,7 +11654,7 @@
       "aircraft": "Airbus A320",
       "gate": "A1",
       "terminal": "3",
-      "status": "On time",
+      "status": "Delayed",
       "price": 48
     },
     {
@@ -11682,7 +11682,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C11",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 185
     },
     {
@@ -11710,7 +11710,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B14",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 254
     },
     {
@@ -11766,7 +11766,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C10",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 72
     },
     {
@@ -11780,7 +11780,7 @@
       "aircraft": "Airbus A320",
       "gate": "B13",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Delayed",
       "price": 98
     },
     {
@@ -11794,7 +11794,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A2",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 199
     },
     {
@@ -11808,7 +11808,7 @@
       "aircraft": "Airbus A320",
       "gate": "B1",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 182
     },
     {
@@ -11850,7 +11850,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "B12",
       "terminal": "3",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 46
     },
     {
@@ -11864,7 +11864,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 243
     },
     {
@@ -11878,7 +11878,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "A11",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 124
     },
     {
@@ -11892,7 +11892,7 @@
       "aircraft": "Embraer E195",
       "gate": "C5",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 119
     },
     {
@@ -11906,7 +11906,7 @@
       "aircraft": "Airbus A320",
       "gate": "C11",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 55
     },
     {
@@ -11920,7 +11920,7 @@
       "aircraft": "Embraer E195",
       "gate": "B7",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 254
     },
     {
@@ -11934,7 +11934,7 @@
       "aircraft": "Airbus A320",
       "gate": "C2",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 220
     },
     {
@@ -11948,7 +11948,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A8",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 154
     },
     {
@@ -11976,7 +11976,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C1",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 78
     },
     {
@@ -12004,7 +12004,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C11",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 224
     },
     {
@@ -12032,7 +12032,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B8",
       "terminal": "1",
-      "status": "Scheduled",
+      "status": "Delayed",
       "price": 172
     },
     {
@@ -12046,7 +12046,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "C13",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 92
     },
     {
@@ -12060,7 +12060,7 @@
       "aircraft": "Airbus A320",
       "gate": "B5",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 236
     },
     {
@@ -12088,7 +12088,7 @@
       "aircraft": "Airbus A320",
       "gate": "C6",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 108
     },
     {
@@ -12102,7 +12102,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A2",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 125
     },
     {
@@ -12116,7 +12116,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A1",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 51
     },
     {
@@ -12144,7 +12144,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B6",
       "terminal": "1",
-      "status": "Cancelled",
+      "status": "Scheduled",
       "price": 246
     },
     {
@@ -12158,7 +12158,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C3",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 63
     },
     {
@@ -12186,7 +12186,7 @@
       "aircraft": "Airbus A320",
       "gate": "B3",
       "terminal": "3",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 123
     },
     {
@@ -12214,7 +12214,7 @@
       "aircraft": "Airbus A320",
       "gate": "B13",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 186
     },
     {
@@ -12228,7 +12228,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C13",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 181
     },
     {
@@ -12242,7 +12242,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C8",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 144
     },
     {
@@ -12256,7 +12256,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "B7",
       "terminal": "1",
-      "status": "On time",
+      "status": "Delayed",
       "price": 92
     },
     {
@@ -12270,7 +12270,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C13",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 216
     },
     {
@@ -12284,7 +12284,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C12",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 68
     },
     {
@@ -12312,7 +12312,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "C14",
       "terminal": "3",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 122
     },
     {
@@ -12326,7 +12326,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "A14",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 232
     },
     {
@@ -12340,7 +12340,7 @@
       "aircraft": "Airbus A320",
       "gate": "B9",
       "terminal": "2",
-      "status": "On time",
+      "status": "Cancelled",
       "price": 196
     },
     {
@@ -12368,7 +12368,7 @@
       "aircraft": "Airbus A320",
       "gate": "A10",
       "terminal": "1",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 169
     },
     {
@@ -12410,7 +12410,7 @@
       "aircraft": "Airbus A220-300",
       "gate": "C7",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 150
     },
     {
@@ -12424,7 +12424,7 @@
       "aircraft": "Airbus A321neo",
       "gate": "B3",
       "terminal": "1",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 137
     },
     {
@@ -12452,7 +12452,7 @@
       "aircraft": "Embraer E195",
       "gate": "A12",
       "terminal": "2",
-      "status": "Cancelled",
+      "status": "Delayed",
       "price": 150
     },
     {
@@ -12466,7 +12466,7 @@
       "aircraft": "Airbus A320",
       "gate": "C13",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 240
     },
     {
@@ -12480,7 +12480,7 @@
       "aircraft": "Embraer E195",
       "gate": "B9",
       "terminal": "2",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 248
     },
     {
@@ -12494,7 +12494,7 @@
       "aircraft": "Airbus A320",
       "gate": "A3",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 40
     },
     {
@@ -12508,7 +12508,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "C9",
       "terminal": "2",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 178
     },
     {
@@ -12522,7 +12522,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A10",
       "terminal": "2",
-      "status": "On time",
+      "status": "Delayed",
       "price": 67
     },
     {
@@ -12536,7 +12536,7 @@
       "aircraft": "Boeing 737-800",
       "gate": "A12",
       "terminal": "3",
-      "status": "Delayed",
+      "status": "Scheduled",
       "price": 258
     },
     {
@@ -12564,7 +12564,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "B9",
       "terminal": "1",
-      "status": "On time",
+      "status": "Scheduled",
       "price": 155
     },
     {
@@ -12592,7 +12592,7 @@
       "aircraft": "Airbus A320neo",
       "gate": "A11",
       "terminal": "2",
-      "status": "Boarding",
+      "status": "Scheduled",
       "price": 82
     },
     {
