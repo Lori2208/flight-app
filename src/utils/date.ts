@@ -32,3 +32,19 @@ export function formatShortDate(iso: string): string {
   const date = fromISODate(iso);
   return `${date.getDate()} ${MONTHS[date.getMonth()]}`;
 }
+
+/** "2026-11-20T06:00:00Z" → "07:00" (in the device's time zone) */
+export function formatTime(isoDateTime: string): string {
+  const date = new Date(isoDateTime);
+  const h = String(date.getHours()).padStart(2, '0');
+  const m = String(date.getMinutes()).padStart(2, '0');
+  return `${h}:${m}`;
+}
+
+/** Duration between two ISO date-times → "1h 25m" */
+export function formatDuration(startIso: string, endIso: string): string {
+  const minutes = Math.round((new Date(endIso).getTime() - new Date(startIso).getTime()) / 60000);
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  return h > 0 ? `${h}h ${m}m` : `${m}m`;
+}

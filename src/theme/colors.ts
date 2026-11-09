@@ -5,6 +5,8 @@ type ExtraColors = {
   danger: string;
   onPrimary: string;
   inputBackground: string;
+  success: string;
+  warning: string;
 };
 
 export type AppTheme = Theme & { colors: Theme['colors'] & ExtraColors };
@@ -23,6 +25,8 @@ export const lightTheme: AppTheme = {
     danger: '#d32f2f',
     onPrimary: '#ffffff',
     inputBackground: '#ffffff',
+    success: '#16a34a',
+    warning: '#d97706',
   },
 };
 
@@ -40,5 +44,7 @@ export const darkTheme: AppTheme = {
     danger: '#f87171',
     onPrimary: '#0b1120',
     inputBackground: '#1f2937',
+      success: '#4ade80',
+    warning: '#fbbf24',
   },
 };
