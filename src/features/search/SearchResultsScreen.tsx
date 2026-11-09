@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import { ActivityIndicator, Button, FlatList, StyleSheet, Text, View } from 'react-native';
 import { Placeholder } from '@/components/Placeholder';
+import { useFavorites } from '@/features/favorites/useFavorites';
 import { FlightCard } from '@/features/flights/components/FlightCard';
 import { useSearchFlightsQuery } from '@/features/flights/flightsApi';
 import type { HomeScreenProps } from '@/navigation/types';
@@ -11,6 +12,7 @@ import { formatLongDate } from '@/utils/date';
 export function SearchResultsScreen({ navigation, route }: HomeScreenProps<'SearchResults'>) {
   const { search } = route.params;
   const { colors } = useAppTheme();
+  const { favorites, isFavorite, toggleFavorite } = useFavorites();
 
   const {
     data: flights = [],
@@ -44,8 +46,16 @@ export function SearchResultsScreen({ navigation, route }: HomeScreenProps<'Sear
   return (
     <FlatList
       data={flights}
+      extraData={favorites}
       keyExtractor={(flight) => String(flight.id)}
-      renderItem={({ item }) => <FlightCard flight={item} onPress={handleOpenFlight} />}
+      renderItem={({ item }) => (
+        <FlightCard
+          flight={item}
+          onPress={handleOpenFlight}
+          isFavorite={isFavorite(item.id)}
+          onToggleFavorite={toggleFavorite}
+        />
+      )}
       contentContainerStyle={styles.list}
       ItemSeparatorComponent={() => <View style={styles.separator} />}
       ListHeaderComponent={
