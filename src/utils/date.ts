@@ -48,3 +48,8 @@ export function formatDuration(startIso: string, endIso: string): string {
   const m = minutes % 60;
   return h > 0 ? `${h}h ${m}m` : `${m}m`;
 }
+
+/** "2026-11-10T07:10:00Z" → "Tue, 10 Nov" (in the device's time zone) */
+export function formatDateFromDateTime(isoDateTime: string): string {
+  return formatLongDate(toISODate(new Date(isoDateTime)));
+}

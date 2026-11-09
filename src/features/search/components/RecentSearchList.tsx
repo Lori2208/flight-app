@@ -22,7 +22,7 @@ export function RecentSearchList({ searches, isLoading, isError, onSelect }: Pro
     if (isError) {
       return (
         <Text style={[styles.status, { color: colors.textSecondary }]}>
-          Couldn't load recent searches
+       {"Couldn't load recent searches"}
         </Text>
       );
     }

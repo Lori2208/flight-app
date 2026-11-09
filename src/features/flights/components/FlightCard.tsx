@@ -1,10 +1,10 @@
 import { Ionicons } from '@expo/vector-icons';
 import { memo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import type { AppTheme } from '@/theme/colors';
 import { useAppTheme } from '@/theme/useAppTheme';
-import type { Flight, FlightStatus } from '@/types';
+import type { Flight } from '@/types';
 import { formatDuration, formatTime } from '@/utils/date';
+import { getStatusColor } from '../flightStatus';
 
 type Props = {
   flight: Flight;
@@ -12,20 +12,6 @@ type Props = {
   isFavorite?: boolean;
   onToggleFavorite?: (flight: Flight) => void;
 };
-
-function getStatusColor(status: FlightStatus, colors: AppTheme['colors']): string {
-  switch (status) {
-    case 'On time':
-    case 'Boarding':
-      return colors.success;
-    case 'Delayed':
-      return colors.warning;
-    case 'Cancelled':
-      return colors.danger;
-    default:
-      return colors.textSecondary;
-  }
-}
 
 function FlightCardComponent({ flight, onPress, isFavorite = false, onToggleFavorite }: Props) {
   const { colors } = useAppTheme();
