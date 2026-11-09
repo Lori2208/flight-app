@@ -7,16 +7,31 @@ import { addDays, toISODate } from '@/utils/date';
 import { AirportPicker } from './components/AirportPicker';
 import { DateField } from '@/components/DateField';
 import { validateSearch } from './validation';
+import { useAppSelector } from '@/app/hooks';
+import { selectCurrentUser } from '@/features/auth/authSlice';
+import { useAddRecentSearchMutation, useGetRecentSearchesQuery } from './recentSearchesApi';
+import { skipToken } from '@reduxjs/toolkit/query/react';
+import type { RecentSearch } from '@/types';
+import { RecentSearchList } from './components/RecentSearchList';
 
 export function HomeScreen({ navigation }: HomeScreenProps<'Home'>) {
   const { colors } = useAppTheme();
   const today = toISODate(new Date());
 
+  
+  const user = useAppSelector(selectCurrentUser);
+  const {
+  data: recentSearches = [],
+  isLoading: isLoadingRecent,
+  isError: isRecentError,
+} = useGetRecentSearchesQuery(user?.id ?? skipToken);
+  const [addRecentSearch] = useAddRecentSearchMutation();
   const [origin, setOrigin] = useState<string | null>('TIA');
   const [destination, setDestination] = useState<string | null>(null);
   const [departureDate, setDepartureDate] = useState(() => toISODate(addDays(new Date(), 7)));
   const [arrivalDate, setArrivalDate] = useState(() => toISODate(addDays(new Date(), 10)));
   const [submitted, setSubmitted] = useState(false);
+  
 
   const error = validateSearch({ origin, destination, departureDate, arrivalDate });
 
@@ -29,17 +44,37 @@ export function HomeScreen({ navigation }: HomeScreenProps<'Home'>) {
     setOrigin(destination);
     setDestination(origin);
   };
+  const handleSelectRecent = (search: RecentSearch) => {
+  setOrigin(search.origin);
+  setDestination(search.destination);
 
-  const handleSearch = () => {
-    setSubmitted(true);
-    if (error || !origin || !destination) return;
+  // Only reuse the dates if they're not in the past
+  if (search.departureDate >= today) {
+    setDepartureDate(search.departureDate);
+    setArrivalDate(search.arrivalDate);
+  }
 
-    navigation.navigate('SearchResults', {
-      search: { origin, destination, departureDate, arrivalDate },
-    });
-  };
+  setSubmitted(false);
+};
+
+const handleSearch = () => {
+  setSubmitted(true);
+  if (error || !origin || !destination) return;
+
+  const search = { origin, destination, departureDate, arrivalDate };
+
+
+ if (user) {
+  addRecentSearch({ ...search, userId: user.id })
+    .unwrap()
+    .catch((err) => console.warn('Saving recent search failed:', err));
+}
+
+  navigation.navigate('SearchResults', { search });
+};
 
   return (
+    
     <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
       <View style={[styles.card, { backgroundColor: colors.card, borderColor: colors.border }]}>
         <View>
@@ -98,7 +133,12 @@ export function HomeScreen({ navigation }: HomeScreenProps<'Home'>) {
           <Text style={[styles.buttonText, { color: colors.onPrimary }]}>Search flights</Text>
         </Pressable>
       </View>
-
+       <RecentSearchList
+        searches={recentSearches}
+        isLoading={isLoadingRecent}
+        isError={isRecentError}
+        onSelect={handleSelectRecent}
+      />
     </ScrollView>
   );
 }
