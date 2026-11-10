@@ -1,8 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
-import { useCallback, useMemo } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import {
   ActivityIndicator,
-  Alert,
   Button,
   FlatList,
   type ListRenderItem,
@@ -10,6 +9,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import { ConfirmDialog } from '@/components/ConfirmDialog';
 import { Placeholder } from '@/components/Placeholder';
 import { FlightCard } from '@/features/flights/components/FlightCard';
 import type { FavoritesScreenProps } from '@/navigation/types';
@@ -21,7 +21,9 @@ export function FavoritesScreen({ navigation }: FavoritesScreenProps<'Favorites'
   const { colors } = useAppTheme();
   const rootNavigation = useNavigation();
   const { favorites, toggleFavorite, isLoading, isFetching, isError, refetch } = useFavorites();
+  const [pendingRemoval, setPendingRemoval] = useState<Flight | null>(null);
 
+  // Each favorite carries its full flight (via _expand); skip optimistic ones without it yet
   const flights = useMemo(
     () =>
       favorites
@@ -35,15 +37,12 @@ export function FavoritesScreen({ navigation }: FavoritesScreenProps<'Favorites'
     [navigation],
   );
 
-  const handleRemove = useCallback(
-    (flight: Flight) => {
-      Alert.alert('Remove favorite', `Remove ${flight.flightNumber} from your favorites?`, [
-        { text: 'Cancel', style: 'cancel' },
-        { text: 'Remove', style: 'destructive', onPress: () => toggleFavorite(flight) },
-      ]);
-    },
-    [toggleFavorite],
-  );
+  const handleRemove = useCallback((flight: Flight) => setPendingRemoval(flight), []);
+
+  const confirmRemove = () => {
+    if (pendingRemoval) toggleFavorite(pendingRemoval);
+    setPendingRemoval(null);
+  };
 
   const renderItem = useCallback<ListRenderItem<Flight>>(
     ({ item }) => (
@@ -77,30 +76,47 @@ export function FavoritesScreen({ navigation }: FavoritesScreenProps<'Favorites'
   }
 
   return (
-    <FlatList
-      data={flights}
-      keyExtractor={(flight) => String(flight.id)}
-      renderItem={renderItem}
-      contentContainerStyle={styles.list}
-      ItemSeparatorComponent={Separator}
-      ListHeaderComponent={
-        flights.length > 0 ? (
-          <Text style={[styles.header, { color: colors.textSecondary }]}>
-            {flights.length} saved {flights.length === 1 ? 'flight' : 'flights'}
-          </Text>
-        ) : undefined
-      }
-      ListEmptyComponent={
-        <Placeholder title="No favorite flights yet">
-          <Text style={[styles.emptyText, { color: colors.textSecondary }]}>
-            Tap the heart on a flight to save it here.
-          </Text>
-          <Button title="Search flights" onPress={goToSearch} color={colors.primary} />
-        </Placeholder>
-      }
-      refreshing={isFetching && !isLoading}
-      onRefresh={refetch}
-    />
+    <>
+      <FlatList
+        data={flights}
+        keyExtractor={(flight) => String(flight.id)}
+        renderItem={renderItem}
+        contentContainerStyle={styles.list}
+        ItemSeparatorComponent={Separator}
+        ListHeaderComponent={
+          flights.length > 0 ? (
+            <Text style={[styles.header, { color: colors.textSecondary }]}>
+              {flights.length} saved {flights.length === 1 ? 'flight' : 'flights'}
+            </Text>
+          ) : undefined
+        }
+        ListEmptyComponent={
+          <Placeholder title="No favorite flights yet">
+            <Text style={[styles.emptyText, { color: colors.textSecondary }]}>
+              Tap the heart on a flight to save it here.
+            </Text>
+            <Button title="Search flights" onPress={goToSearch} color={colors.primary} />
+          </Placeholder>
+        }
+        refreshing={isFetching && !isLoading}
+        onRefresh={refetch}
+      />
+
+      <ConfirmDialog
+        visible={pendingRemoval !== null}
+        icon="heart-dislike-outline"
+        title="Remove favorite?"
+        message={
+          pendingRemoval
+            ? `${pendingRemoval.flightNumber} will be removed from your favorite flights.`
+            : ''
+        }
+        confirmLabel="Remove"
+        destructive
+        onConfirm={confirmRemove}
+        onCancel={() => setPendingRemoval(null)}
+      />
+    </>
   );
 }
 

@@ -1,6 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
-import { Alert, Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useAppDispatch, useAppSelector } from '@/app/hooks';
+import { ConfirmDialog } from '@/components/ConfirmDialog';
 import { loggedOut, selectCurrentUser } from '@/features/auth/authSlice';
 import { api } from '@/services/api';
 import { selectThemeMode, themeModeChanged, type ThemeMode } from '@/theme/themeSlice';
@@ -26,79 +28,90 @@ export function ProfileScreen() {
   const { colors } = useAppTheme();
   const user = useAppSelector(selectCurrentUser);
   const themeMode = useAppSelector(selectThemeMode);
+  const [showLogout, setShowLogout] = useState(false);
 
   const handleLogout = () => {
-    Alert.alert('Log out', 'Are you sure you want to log out?', [
-      { text: 'Cancel', style: 'cancel' },
-      {
-        text: 'Log out',
-        style: 'destructive',
-        onPress: () => {
-          dispatch(loggedOut());
-          dispatch(api.util.resetApiState());
-        },
-      },
-    ]);
+    setShowLogout(false);
+    dispatch(loggedOut());
+    dispatch(api.util.resetApiState());
   };
 
   if (!user) return null;
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.header}>
-        {user.avatar ? (
-          <Image source={{ uri: user.avatar }} style={styles.avatar} />
-        ) : (
-          <View style={[styles.avatar, styles.avatarFallback, { backgroundColor: colors.primary }]}>
-            <Text style={[styles.initials, { color: colors.onPrimary }]}>
-              {getInitials(user.name)}
-            </Text>
-          </View>
-        )}
-        <Text style={[styles.name, { color: colors.text }]}>{user.name}</Text>
-        <Text style={[styles.email, { color: colors.textSecondary }]}>{user.email}</Text>
-      </View>
-
-      <View style={[styles.section, { backgroundColor: colors.card, borderColor: colors.border }]}>
-        <Text style={[styles.sectionTitle, { color: colors.text }]}>Appearance</Text>
-        <View style={[styles.segmented, { borderColor: colors.border }]}>
-          {THEME_OPTIONS.map((option) => {
-            const selected = themeMode === option.mode;
-            return (
-              <Pressable
-                key={option.mode}
-                style={[styles.segment, selected && { backgroundColor: colors.primary }]}
-                onPress={() => dispatch(themeModeChanged(option.mode))}
-                accessibilityRole="button"
-                accessibilityState={{ selected }}
-              >
-                <Ionicons
-                  name={option.icon}
-                  size={18}
-                  color={selected ? colors.onPrimary : colors.textSecondary}
-                />
-                <Text
-                  style={[
-                    styles.segmentLabel,
-                    { color: selected ? colors.onPrimary : colors.text },
-                  ]}
-                >
-                  {option.label}
-                </Text>
-              </Pressable>
-            );
-          })}
+    <>
+      <ScrollView contentContainerStyle={styles.container}>
+        <View style={styles.header}>
+          {user.avatar ? (
+            <Image source={{ uri: user.avatar }} style={styles.avatar} />
+          ) : (
+            <View style={[styles.avatar, styles.avatarFallback, { backgroundColor: colors.primary }]}>
+              <Text style={[styles.initials, { color: colors.onPrimary }]}>
+                {getInitials(user.name)}
+              </Text>
+            </View>
+          )}
+          <Text style={[styles.name, { color: colors.text }]}>{user.name}</Text>
+          <Text style={[styles.email, { color: colors.textSecondary }]}>{user.email}</Text>
         </View>
-      </View>
 
-      <Pressable
-        style={[styles.logoutButton, { borderColor: colors.danger }]}
-        onPress={handleLogout}
-      >
-        <Ionicons name="log-out-outline" size={20} color={colors.danger} />
-        <Text style={[styles.logoutText, { color: colors.danger }]}>Log out</Text>
-      </Pressable>
-    </ScrollView>
+        <View style={[styles.section, { backgroundColor: colors.card, borderColor: colors.border }]}>
+          <Text style={[styles.sectionTitle, { color: colors.text }]}>Appearance</Text>
+          <View style={[styles.segmented, { borderColor: colors.border }]}>
+            {THEME_OPTIONS.map((option) => {
+              const selected = themeMode === option.mode;
+              return (
+                <Pressable
+                  key={option.mode}
+                  style={[styles.segment, selected && { backgroundColor: colors.primary }]}
+                  onPress={() => dispatch(themeModeChanged(option.mode))}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected }}
+                >
+                  <Ionicons
+                    name={option.icon}
+                    size={18}
+                    color={selected ? colors.onPrimary : colors.textSecondary}
+                  />
+                  <Text
+                    style={[
+                      styles.segmentLabel,
+                      { color: selected ? colors.onPrimary : colors.text },
+                    ]}
+                  >
+                    {option.label}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+        </View>
+
+        <Pressable
+          style={({ pressed }) => [
+            styles.logoutButton,
+            { borderColor: colors.danger },
+            pressed && styles.pressed,
+          ]}
+          onPress={() => setShowLogout(true)}
+          accessibilityRole="button"
+        >
+          <Ionicons name="log-out-outline" size={20} color={colors.danger} />
+          <Text style={[styles.logoutText, { color: colors.danger }]}>Log out</Text>
+        </Pressable>
+      </ScrollView>
+
+      <ConfirmDialog
+        visible={showLogout}
+        icon="log-out-outline"
+        title="Log out?"
+        message="You'll need to log in again to see your favorites and recent searches."
+        confirmLabel="Log out"
+        destructive
+        onConfirm={handleLogout}
+        onCancel={() => setShowLogout(false)}
+      />
+    </>
   );
 }
 
@@ -128,8 +141,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 8,
     paddingVertical: 14,
-    borderRadius: 10,
+    borderRadius: 12,
     borderWidth: 1,
   },
+  pressed: { opacity: 0.7 },
   logoutText: { fontSize: 16, fontWeight: '600' },
 });

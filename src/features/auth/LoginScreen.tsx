@@ -1,10 +1,11 @@
-import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import {
   ActivityIndicator,
+  Image,
   KeyboardAvoidingView,
   Platform,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -46,72 +47,78 @@ export function LoginScreen() {
 
   return (
     <KeyboardAvoidingView
-      style={styles.container}
-      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      style={styles.flex}
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
     >
-      <View style={styles.header}>
-        <Ionicons name="airplane" size={56} color={colors.primary} />
-        <Text style={[styles.title, { color: colors.text }]}>Flight App</Text>
-        <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
-          Log in to search and save flights
+      <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
+        <View style={styles.header}>
+          <Image
+            source={require('../../../assets/logo.png')}
+            style={styles.logo}
+            accessibilityLabel="Voy logo"
+          />
+          <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
+            Log in to search and save flights
+          </Text>
+        </View>
+
+        <TextField
+          placeholder="Email"
+          value={email}
+          onChangeText={(text) => {
+            setEmail(text);
+            setError(null);
+          }}
+          autoCapitalize="none"
+          autoCorrect={false}
+          keyboardType="email-address"
+          autoComplete="email"
+        />
+
+        <TextField
+          placeholder="Password"
+          value={password}
+          onChangeText={(text) => {
+            setPassword(text);
+            setError(null);
+          }}
+          secureTextEntry
+          autoComplete="password"
+          returnKeyType="go"
+          onSubmitEditing={handleLogin}
+        />
+
+        {error && <Text style={[styles.error, { color: colors.danger }]}>{error}</Text>}
+
+        <Pressable
+          style={[
+            styles.button,
+            { backgroundColor: colors.primary },
+            !canSubmit && styles.buttonDisabled,
+          ]}
+          onPress={handleLogin}
+          disabled={!canSubmit}
+        >
+          {isLoading ? (
+            <ActivityIndicator color={colors.onPrimary} />
+          ) : (
+            <Text style={[styles.buttonText, { color: colors.onPrimary }]}>Log in</Text>
+          )}
+        </Pressable>
+
+        <Text style={[styles.hint, { color: colors.textSecondary }]}>
+          Demo: demo@flights.com / 123456
         </Text>
-      </View>
-
-      <TextField
-        placeholder="Email"
-        value={email}
-        onChangeText={(text) => {
-          setEmail(text);
-          setError(null);
-        }}
-        autoCapitalize="none"
-        autoCorrect={false}
-        keyboardType="email-address"
-        autoComplete="email"
-      />
-
-      <TextField
-        placeholder="Password"
-        value={password}
-        onChangeText={(text) => {
-          setPassword(text);
-          setError(null);
-        }}
-        secureTextEntry
-        autoComplete="password"
-        returnKeyType="go"
-        onSubmitEditing={handleLogin}
-      />
-
-      {error && <Text style={[styles.error, { color: colors.danger }]}>{error}</Text>}
-
-      <Pressable
-        style={[
-          styles.button,
-          { backgroundColor: colors.primary },
-          !canSubmit && styles.buttonDisabled,
-        ]}
-        onPress={handleLogin}
-        disabled={!canSubmit}
-      >
-        {isLoading ? (
-          <ActivityIndicator color={colors.onPrimary} />
-        ) : (
-          <Text style={[styles.buttonText, { color: colors.onPrimary }]}>Log in</Text>
-        )}
-      </Pressable>
-
-      <Text style={[styles.hint, { color: colors.textSecondary }]}>
-        Demo: demo@flights.com / 123456
-      </Text>
+      </ScrollView>
     </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', padding: 24, gap: 12 },
-  header: { alignItems: 'center', gap: 6, marginBottom: 24 },
-  title: { fontSize: 28, fontWeight: '700' },
+  flex: { flex: 1 },
+  container: { flexGrow: 1, justifyContent: 'center', padding: 24, gap: 12 },
+  header: { alignItems: 'center', gap: 12, marginBottom: 24 },
+  logo: { width: 120, height: 120 },
   subtitle: { fontSize: 15 },
   error: { fontSize: 14 },
   button: { borderRadius: 10, paddingVertical: 14, alignItems: 'center', marginTop: 4 },
