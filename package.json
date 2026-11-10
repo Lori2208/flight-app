@@ -10,8 +10,11 @@
     "@react-navigation/native": "^7.5.1",
     "@react-navigation/native-stack": "^7.21.0",
     "@reduxjs/toolkit": "^2.14.0",
+    "@types/jest": "30.0.0",
     "expo": "~58.0.23",
     "expo-status-bar": "~58.0.4",
+    "jest": "~30.5.2",
+    "jest-expo": "~58.0.14",
     "react": "19.3.0",
     "react-native": "0.88.1",
     "react-native-safe-area-context": "~5.11.1",
@@ -19,6 +22,7 @@
     "react-redux": "^9.3.1"
   },
   "devDependencies": {
+    "@testing-library/react-native": "^14.1.0",
     "@types/react": "~19.3.0",
     "eslint": "^9.0.0",
     "eslint-config-expo": "~58.0.4",
@@ -26,6 +30,16 @@
     "prettier": "^3.9.10",
     "typescript": "~6.0.3"
   },
+  "jest": {
+  "preset": "jest-expo",
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1"
+  },
+
+ "transformIgnorePatterns": [
+    "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg|immer|@reduxjs/.*|redux|reselect)"
+  ]
+},
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -34,7 +48,8 @@
     "lint": "expo lint",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "server": "json-server --watch server/db.json --port 3000 --host 0.0.0.0",
-    "server:reset": "copy server\\db.seed.json server\\db.json"
+   "server:reset": "node -e \"require('fs').copyFileSync('server/db.seed.json','server/db.json')\"",
+    "test": "jest"
   },
   "private": true
 }
