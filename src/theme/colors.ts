@@ -44,7 +44,7 @@ export const darkTheme: AppTheme = {
     danger: '#f87171',
     onPrimary: '#0b1120',
     inputBackground: '#1f2937',
-      success: '#4ade80',
+    success: '#4ade80',
     warning: '#fbbf24',
   },
 };

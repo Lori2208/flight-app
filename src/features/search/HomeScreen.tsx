@@ -1,37 +1,45 @@
 import { Ionicons } from '@expo/vector-icons';
-import { useState } from 'react';
+import { useFocusEffect } from '@react-navigation/native';
+import { skipToken } from '@reduxjs/toolkit/query/react';
+import { useCallback, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useAppSelector } from '@/app/hooks';
+import { DateField } from '@/components/DateField';
+import { selectCurrentUser } from '@/features/auth/authSlice';
 import type { HomeScreenProps } from '@/navigation/types';
 import { useAppTheme } from '@/theme/useAppTheme';
+import type { RecentSearch } from '@/types';
 import { addDays, toISODate } from '@/utils/date';
 import { AirportPicker } from './components/AirportPicker';
-import { DateField } from '@/components/DateField';
-import { validateSearch } from './validation';
-import { useAppSelector } from '@/app/hooks';
-import { selectCurrentUser } from '@/features/auth/authSlice';
-import { useAddRecentSearchMutation, useGetRecentSearchesQuery } from './recentSearchesApi';
-import { skipToken } from '@reduxjs/toolkit/query/react';
-import type { RecentSearch } from '@/types';
 import { RecentSearchList } from './components/RecentSearchList';
+import { useAddRecentSearchMutation, useGetRecentSearchesQuery } from './recentSearchesApi';
+import { validateSearch } from './validation';
 
 export function HomeScreen({ navigation }: HomeScreenProps<'Home'>) {
   const { colors } = useAppTheme();
   const today = toISODate(new Date());
 
-  
   const user = useAppSelector(selectCurrentUser);
   const {
-  data: recentSearches = [],
-  isLoading: isLoadingRecent,
-  isError: isRecentError,
-} = useGetRecentSearchesQuery(user?.id ?? skipToken);
+    data: recentSearches = [],
+    isLoading: isLoadingRecent,
+    isError: isRecentError,
+  } = useGetRecentSearchesQuery(user?.id ?? skipToken);
   const [addRecentSearch] = useAddRecentSearchMutation();
+
   const [origin, setOrigin] = useState<string | null>('TIA');
   const [destination, setDestination] = useState<string | null>(null);
   const [departureDate, setDepartureDate] = useState(() => toISODate(addDays(new Date(), 7)));
   const [arrivalDate, setArrivalDate] = useState(() => toISODate(addDays(new Date(), 10)));
   const [submitted, setSubmitted] = useState(false);
-  
+
+  const isSubmittingRef = useRef(false);
+
+  useFocusEffect(
+    useCallback(() => {
+      isSubmittingRef.current = false;
+    }, []),
+  );
 
   const error = validateSearch({ origin, destination, departureDate, arrivalDate });
 
@@ -45,36 +53,36 @@ export function HomeScreen({ navigation }: HomeScreenProps<'Home'>) {
     setDestination(origin);
   };
   const handleSelectRecent = (search: RecentSearch) => {
-  setOrigin(search.origin);
-  setDestination(search.destination);
+    setOrigin(search.origin);
+    setDestination(search.destination);
 
-  // Only reuse the dates if they're not in the past
-  if (search.departureDate >= today) {
-    setDepartureDate(search.departureDate);
-    setArrivalDate(search.arrivalDate);
-  }
+    // Only reuse the dates if they're not in the past
+    if (search.departureDate >= today) {
+      setDepartureDate(search.departureDate);
+      setArrivalDate(search.arrivalDate);
+    }
 
-  setSubmitted(false);
-};
+    setSubmitted(false);
+  };
 
-const handleSearch = () => {
-  setSubmitted(true);
-  if (error || !origin || !destination) return;
+  const handleSearch = () => {
+    setSubmitted(true);
+    if (error || !origin || !destination) return;
+    if (isSubmittingRef.current) return;
+    isSubmittingRef.current = true;
 
-  const search = { origin, destination, departureDate, arrivalDate };
+    const search = { origin, destination, departureDate, arrivalDate };
 
+    if (user) {
+      addRecentSearch({ ...search, userId: user.id })
+        .unwrap()
+        .catch((err) => console.warn('Saving recent search failed:', err));
+    }
 
- if (user) {
-  addRecentSearch({ ...search, userId: user.id })
-    .unwrap()
-    .catch((err) => console.warn('Saving recent search failed:', err));
-}
-
-  navigation.navigate('SearchResults', { search });
-};
+    navigation.navigate('SearchResults', { search });
+  };
 
   return (
-    
     <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
       <View style={[styles.card, { backgroundColor: colors.card, borderColor: colors.border }]}>
         <View>
@@ -125,7 +133,7 @@ const handleSearch = () => {
           style={({ pressed }) => [
             styles.button,
             { backgroundColor: colors.primary },
-            pressed && { opacity: 0.8 },
+            pressed && styles.pressed,
           ]}
           onPress={handleSearch}
         >
@@ -133,7 +141,7 @@ const handleSearch = () => {
           <Text style={[styles.buttonText, { color: colors.onPrimary }]}>Search flights</Text>
         </Pressable>
       </View>
-       <RecentSearchList
+      <RecentSearchList
         searches={recentSearches}
         isLoading={isLoadingRecent}
         isError={isRecentError}
@@ -144,7 +152,7 @@ const handleSearch = () => {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 16, gap: 16 },
+  container: { padding: 16, gap: 16, paddingBottom: 32  },
   card: { borderRadius: 16, borderWidth: StyleSheet.hairlineWidth, padding: 16, gap: 12 },
   gap: { height: 8 },
   swap: {
@@ -168,5 +176,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingVertical: 14,
   },
+  pressed: { opacity: 0.8 },
   buttonText: { fontSize: 16, fontWeight: '600' },
 });

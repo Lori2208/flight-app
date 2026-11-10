@@ -51,7 +51,9 @@ function FlightCardComponent({ flight, onPress, isFavorite = false, onToggleFavo
 
       <View style={styles.timesRow}>
         <View>
-          <Text style={[styles.time, { color: colors.text }]}>{formatTime(flight.departureTime)}</Text>
+          <Text style={[styles.time, { color: colors.text }]}>
+            {formatTime(flight.departureTime)}
+          </Text>
           <Text style={[styles.code, { color: colors.textSecondary }]}>{flight.origin}</Text>
         </View>
 
@@ -67,7 +69,9 @@ function FlightCardComponent({ flight, onPress, isFavorite = false, onToggleFavo
         </View>
 
         <View style={styles.alignRight}>
-          <Text style={[styles.time, { color: colors.text }]}>{formatTime(flight.arrivalTime)}</Text>
+          <Text style={[styles.time, { color: colors.text }]}>
+            {formatTime(flight.arrivalTime)}
+          </Text>
           <Text style={[styles.code, { color: colors.textSecondary }]}>{flight.destination}</Text>
         </View>
       </View>

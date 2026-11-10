@@ -7,7 +7,6 @@ import { FlightDetailsScreen } from '@/features/flights/FlightDetailsScreen';
 import { MoreScreen } from '@/features/more/MoreScreen';
 import { ComingSoonScreen } from '@/features/more/ComingSoonScreen';
 
-
 const Home = createNativeStackNavigator<HomeStackParamList>();
 
 export function HomeStack() {
@@ -22,10 +21,10 @@ export function HomeStack() {
         })}
       />
       <Home.Screen
-  name="FlightDetails"
-  component={FlightDetailsScreen}
-  options={{ title: 'Flight details' }}
-/>
+        name="FlightDetails"
+        component={FlightDetailsScreen}
+        options={{ title: 'Flight details' }}
+      />
     </Home.Navigator>
   );
 }
@@ -41,10 +40,10 @@ export function FavoritesStack() {
         options={{ title: 'Favorite flights' }}
       />
       <Favorites.Screen
-  name="FlightDetails"
-  component={FlightDetailsScreen}
-  options={{ title: 'Flight details' }}
-/>
+        name="FlightDetails"
+        component={FlightDetailsScreen}
+        options={{ title: 'Flight details' }}
+      />
     </Favorites.Navigator>
   );
 }

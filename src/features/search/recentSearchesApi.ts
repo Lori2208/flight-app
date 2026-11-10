@@ -1,6 +1,6 @@
 import { api } from '@/services/api';
 import type { RecentSearch, SearchParams } from '@/types';
-import { getSearchesToDelete, MAX_RECENT_SEARCHES } from './recentSearchUtils';
+import { getSearchesToDelete, isSameSearch, MAX_RECENT_SEARCHES } from './recentSearchUtils';
 
 type AddRecentSearchArg = SearchParams & { userId: number };
 
@@ -11,6 +11,10 @@ export const recentSearchesApi = api.injectEndpoints({
         url: '/recentSearches',
         params: { userId, _sort: 'createdAt', _order: 'desc', _limit: MAX_RECENT_SEARCHES },
       }),
+      transformResponse: (searches: RecentSearch[]) =>
+        searches.filter(
+          (search, index) => searches.findIndex((other) => isSameSearch(other, search)) === index,
+        ),
       providesTags: ['RecentSearches'],
     }),
 

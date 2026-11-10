@@ -16,9 +16,9 @@ export interface Flight {
 }
 
 export interface Airport {
-  code: string; 
-  city: string; 
-  name: string; 
+  code: string;
+  city: string;
+  name: string;
 }
 
 export interface User {
@@ -45,5 +45,5 @@ export interface Favorite {
   id: number;
   userId: number;
   flightId: number;
-  flight?: Flight; 
+  flight?: Flight;
 }

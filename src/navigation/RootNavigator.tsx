@@ -3,11 +3,7 @@ import { useEffect } from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import { useAppDispatch, useAppSelector } from '@/app/hooks';
 import { LoginScreen } from '@/features/auth/LoginScreen';
-import {
-  selectIsLoggedIn,
-  selectIsRestoring,
-  sessionRestored,
-} from '@/features/auth/authSlice';
+import { selectIsLoggedIn, selectIsRestoring, sessionRestored } from '@/features/auth/authSlice';
 import { loadSession } from '@/features/auth/session';
 import { MainTabs } from './MainTabs';
 import type { RootStackParamList } from './types';
@@ -23,27 +19,27 @@ export function RootNavigator() {
   const isRestoring = useAppSelector(selectIsRestoring);
   const { colors } = useAppTheme();
 
-useEffect(() => {
-  Promise.all([loadSession(), loadThemeMode()]).then(([user, mode]) => {
-    if (mode) dispatch(themeModeRestored(mode));
-    dispatch(sessionRestored(user));
-  });
-}, [dispatch]);
+  useEffect(() => {
+    Promise.all([loadSession(), loadThemeMode()]).then(([user, mode]) => {
+      if (mode) dispatch(themeModeRestored(mode));
+      dispatch(sessionRestored(user));
+    });
+  }, [dispatch]);
 
- if (isRestoring) {
-  return (
-    <View
-      style={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: colors.background,
-      }}
-    >
-      <ActivityIndicator size="large" color={colors.primary} />
-    </View>
-  );
-}
+  if (isRestoring) {
+    return (
+      <View
+        style={{
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: colors.background,
+        }}
+      >
+        <ActivityIndicator size="large" color={colors.primary} />
+      </View>
+    );
+  }
 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>

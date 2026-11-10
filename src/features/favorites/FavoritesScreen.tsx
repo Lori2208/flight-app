@@ -1,6 +1,15 @@
 import { useNavigation } from '@react-navigation/native';
 import { useCallback, useMemo } from 'react';
-import { ActivityIndicator, Alert, Button, FlatList, StyleSheet, Text, View } from 'react-native';
+import {
+  ActivityIndicator,
+  Alert,
+  Button,
+  FlatList,
+  type ListRenderItem,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import { Placeholder } from '@/components/Placeholder';
 import { FlightCard } from '@/features/flights/components/FlightCard';
 import type { FavoritesScreenProps } from '@/navigation/types';
@@ -36,6 +45,18 @@ export function FavoritesScreen({ navigation }: FavoritesScreenProps<'Favorites'
     [toggleFavorite],
   );
 
+  const renderItem = useCallback<ListRenderItem<Flight>>(
+    ({ item }) => (
+      <FlightCard
+        flight={item}
+        onPress={handleOpenFlight}
+        isFavorite
+        onToggleFavorite={handleRemove}
+      />
+    ),
+    [handleOpenFlight, handleRemove],
+  );
+
   const goToSearch = () =>
     rootNavigation.navigate('Main', { screen: 'HomeTab', params: { screen: 'Home' } });
 
@@ -59,16 +80,9 @@ export function FavoritesScreen({ navigation }: FavoritesScreenProps<'Favorites'
     <FlatList
       data={flights}
       keyExtractor={(flight) => String(flight.id)}
-      renderItem={({ item }) => (
-        <FlightCard
-          flight={item}
-          onPress={handleOpenFlight}
-          isFavorite
-          onToggleFavorite={handleRemove}
-        />
-      )}
+      renderItem={renderItem}
       contentContainerStyle={styles.list}
-      ItemSeparatorComponent={() => <View style={styles.separator} />}
+      ItemSeparatorComponent={Separator}
       ListHeaderComponent={
         flights.length > 0 ? (
           <Text style={[styles.header, { color: colors.textSecondary }]}>
@@ -97,3 +111,7 @@ const styles = StyleSheet.create({
   header: { fontSize: 14, marginBottom: 12 },
   emptyText: { textAlign: 'center' },
 });
+
+function Separator() {
+  return <View style={styles.separator} />;
+}

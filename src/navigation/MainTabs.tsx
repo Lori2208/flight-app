@@ -33,16 +33,12 @@ export function MainTabs() {
         options={{ title: 'Favorites', headerShown: false }}
       />
 
+      <Tab.Screen name="ProfileTab" component={ProfileScreen} options={{ title: 'Profile' }} />
       <Tab.Screen
-  name="ProfileTab"
-  component={ProfileScreen}
-  options={{ title: 'Profile' }}
-/>
-<Tab.Screen
-  name="MoreTab"
-  component={MoreStack}
-  options={{ title: 'More', headerShown: false }}
-/>
+        name="MoreTab"
+        component={MoreStack}
+        options={{ title: 'More', headerShown: false }}
+      />
     </Tab.Navigator>
   );
 }

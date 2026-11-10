@@ -11,7 +11,6 @@ export function isSameSearch(a: SearchParams, b: SearchParams): boolean {
   );
 }
 
-
 export function getSearchesToDelete(
   existing: RecentSearch[],
   next: SearchParams,

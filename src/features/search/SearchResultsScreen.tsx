@@ -1,5 +1,13 @@
 import { useCallback } from 'react';
-import { ActivityIndicator, Button, FlatList, StyleSheet, Text, View } from 'react-native';
+import {
+  ActivityIndicator,
+  Button,
+  FlatList,
+  type ListRenderItem,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import { Placeholder } from '@/components/Placeholder';
 import { useFavorites } from '@/features/favorites/useFavorites';
 import { FlightCard } from '@/features/flights/components/FlightCard';
@@ -27,6 +35,18 @@ export function SearchResultsScreen({ navigation, route }: HomeScreenProps<'Sear
     [navigation],
   );
 
+  const renderItem = useCallback<ListRenderItem<Flight>>(
+    ({ item }) => (
+      <FlightCard
+        flight={item}
+        onPress={handleOpenFlight}
+        isFavorite={isFavorite(item.id)}
+        onToggleFavorite={toggleFavorite}
+      />
+    ),
+    [handleOpenFlight, isFavorite, toggleFavorite],
+  );
+
   if (isLoading) {
     return (
       <View style={styles.center}>
@@ -48,16 +68,9 @@ export function SearchResultsScreen({ navigation, route }: HomeScreenProps<'Sear
       data={flights}
       extraData={favorites}
       keyExtractor={(flight) => String(flight.id)}
-      renderItem={({ item }) => (
-        <FlightCard
-          flight={item}
-          onPress={handleOpenFlight}
-          isFavorite={isFavorite(item.id)}
-          onToggleFavorite={toggleFavorite}
-        />
-      )}
+      renderItem={renderItem}
       contentContainerStyle={styles.list}
-      ItemSeparatorComponent={() => <View style={styles.separator} />}
+      ItemSeparatorComponent={Separator}
       ListHeaderComponent={
         flights.length > 0 ? (
           <Text style={[styles.header, { color: colors.textSecondary }]}>
@@ -68,7 +81,7 @@ export function SearchResultsScreen({ navigation, route }: HomeScreenProps<'Sear
       }
       ListEmptyComponent={
         <Placeholder title="No flights found">
-          <Text style={{ color: colors.textSecondary, textAlign: 'center' }}>
+          <Text style={[styles.emptyText, { color: colors.textSecondary }]}>
             Try another date or route.
           </Text>
         </Placeholder>
@@ -84,4 +97,9 @@ const styles = StyleSheet.create({
   list: { padding: 16, flexGrow: 1 },
   separator: { height: 12 },
   header: { fontSize: 14, marginBottom: 12 },
+  emptyText: { textAlign: 'center' },
 });
+
+function Separator() {
+  return <View style={styles.separator} />;
+}

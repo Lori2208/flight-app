@@ -9,7 +9,7 @@ export const store = configureStore({
   reducer: {
     [api.reducerPath]: api.reducer,
     auth: authReducer,
-    theme: themeReducer
+    theme: themeReducer,
   },
   middleware: (getDefault) =>
     getDefault().prepend(authListener.middleware, themeListener.middleware).concat(api.middleware),

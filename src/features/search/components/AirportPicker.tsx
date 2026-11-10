@@ -79,7 +79,9 @@ export function AirportPicker({ label, value, onChange, excludeCode }: Props) {
                 </Pressable>
               )}
               ListEmptyComponent={
-                <Text style={[styles.empty, { color: colors.textSecondary }]}>No airports found</Text>
+                <Text style={[styles.empty, { color: colors.textSecondary }]}>
+                  No airports found
+                </Text>
               }
             />
           </SafeAreaView>

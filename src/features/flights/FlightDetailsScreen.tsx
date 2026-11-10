@@ -76,7 +76,9 @@ export function FlightDetailsScreen() {
       <View style={cardStyle}>
         <View style={styles.routeRow}>
           <View>
-            <Text style={[styles.time, { color: colors.text }]}>{formatTime(flight.departureTime)}</Text>
+            <Text style={[styles.time, { color: colors.text }]}>
+              {formatTime(flight.departureTime)}
+            </Text>
             <Text style={[styles.code, { color: colors.text }]}>{flight.origin}</Text>
             <Text style={[styles.date, { color: colors.textSecondary }]}>
               {formatDateFromDateTime(flight.departureTime)}
@@ -93,7 +95,9 @@ export function FlightDetailsScreen() {
           </View>
 
           <View style={styles.alignRight}>
-            <Text style={[styles.time, { color: colors.text }]}>{formatTime(flight.arrivalTime)}</Text>
+            <Text style={[styles.time, { color: colors.text }]}>
+              {formatTime(flight.arrivalTime)}
+            </Text>
             <Text style={[styles.code, { color: colors.text }]}>{flight.destination}</Text>
             <Text style={[styles.date, { color: colors.textSecondary }]}>
               {formatDateFromDateTime(flight.arrivalTime)}

@@ -25,7 +25,7 @@ export const favoritesApi = api.injectEndpoints({
         try {
           await queryFulfilled;
         } catch {
-          patch.undo(); 
+          patch.undo();
         }
       },
       invalidatesTags: ['Favorites'],

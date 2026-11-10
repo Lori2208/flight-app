@@ -68,7 +68,6 @@ export function LoginScreen() {
         autoCorrect={false}
         keyboardType="email-address"
         autoComplete="email"
-        returnKeyType="next"
       />
 
       <TextField

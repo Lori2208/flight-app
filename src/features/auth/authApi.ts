@@ -20,7 +20,6 @@ export const authApi = api.injectEndpoints({
           return { error: { status: 401, data: 'Invalid email or password' } };
         }
 
-       
         const user: User = {
           id: record.id,
           email: record.email,
