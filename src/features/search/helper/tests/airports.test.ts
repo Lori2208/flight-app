@@ -1,4 +1,4 @@
-import { findAirport, searchAirports } from './airports';
+import { findAirport, searchAirports } from '../airports';
 
 describe('searchAirports', () => {
   it('returns every airport for an empty query', () => {

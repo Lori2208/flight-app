@@ -13,8 +13,8 @@ import {
 import { useAppDispatch } from '@/app/hooks';
 import { TextField } from '@/components/TextField';
 import { useAppTheme } from '@/theme/useAppTheme';
-import { useLoginMutation } from './authApi';
-import { loggedIn } from './authSlice';
+import { useLoginMutation } from './api/authApi';
+import { loggedIn } from './store/authSlice';
 
 function getErrorMessage(err: unknown): string {
   if (typeof err === 'object' && err !== null && 'status' in err && err.status === 401) {
@@ -105,10 +105,6 @@ export function LoginScreen() {
             <Text style={[styles.buttonText, { color: colors.onPrimary }]}>Log in</Text>
           )}
         </Pressable>
-
-        <Text style={[styles.hint, { color: colors.textSecondary }]}>
-          Demo: demo@flights.com / 123456
-        </Text>
       </ScrollView>
     </KeyboardAvoidingView>
   );

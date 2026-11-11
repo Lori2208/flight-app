@@ -15,7 +15,9 @@ import { FlightCard } from '@/features/flights/components/FlightCard';
 import type { FavoritesScreenProps } from '@/navigation/types';
 import { useAppTheme } from '@/theme/useAppTheme';
 import type { Flight } from '@/types';
-import { useFavorites } from './useFavorites';
+import { useFavorites } from './hooks/useFavorites';
+import { FavoritesHeader } from './components/FavoritesHeader';
+import { FavoritesEmpty } from './components/FavoritesEmpty';
 
 export function FavoritesScreen({ navigation }: FavoritesScreenProps<'Favorites'>) {
   const { colors } = useAppTheme();
@@ -23,7 +25,6 @@ export function FavoritesScreen({ navigation }: FavoritesScreenProps<'Favorites'
   const { favorites, toggleFavorite, isLoading, isFetching, isError, refetch } = useFavorites();
   const [pendingRemoval, setPendingRemoval] = useState<Flight | null>(null);
 
-  // Each favorite carries its full flight (via _expand); skip optimistic ones without it yet
   const flights = useMemo(
     () =>
       favorites
@@ -82,22 +83,11 @@ export function FavoritesScreen({ navigation }: FavoritesScreenProps<'Favorites'
         keyExtractor={(flight) => String(flight.id)}
         renderItem={renderItem}
         contentContainerStyle={styles.list}
-        ItemSeparatorComponent={Separator}
+        ItemSeparatorComponent={<View style={styles.separator} />}
         ListHeaderComponent={
-          flights.length > 0 ? (
-            <Text style={[styles.header, { color: colors.textSecondary }]}>
-              {flights.length} saved {flights.length === 1 ? 'flight' : 'flights'}
-            </Text>
-          ) : undefined
-        }
-        ListEmptyComponent={
-          <Placeholder title="No favorite flights yet">
-            <Text style={[styles.emptyText, { color: colors.textSecondary }]}>
-              Tap the heart on a flight to save it here.
-            </Text>
-            <Button title="Search flights" onPress={goToSearch} color={colors.primary} />
-          </Placeholder>
-        }
+  flights.length > 0 ? <FavoritesHeader count={flights.length} /> : undefined
+}
+ListEmptyComponent={<FavoritesEmpty onSearchPress={goToSearch} />}
         refreshing={isFetching && !isLoading}
         onRefresh={refetch}
       />
@@ -127,7 +117,3 @@ const styles = StyleSheet.create({
   header: { fontSize: 14, marginBottom: 12 },
   emptyText: { textAlign: 'center' },
 });
-
-function Separator() {
-  return <View style={styles.separator} />;
-}

@@ -4,7 +4,7 @@ import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-nati
 import { useAppTheme } from '@/theme/useAppTheme';
 import type { RecentSearch } from '@/types';
 import { formatShortDate } from '@/utils/date';
-import { findAirport } from '../airports';
+import { findAirport } from '../helper/airports';
 
 const PREVIEW_COUNT = 4;
 

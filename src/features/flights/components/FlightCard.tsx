@@ -4,7 +4,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useAppTheme } from '@/theme/useAppTheme';
 import type { Flight } from '@/types';
 import { formatDuration, formatTime } from '@/utils/date';
-import { getStatusColor } from '../flightStatus';
+import { getStatusColor } from '../helper/flightStatus';
 
 type Props = {
   flight: Flight;

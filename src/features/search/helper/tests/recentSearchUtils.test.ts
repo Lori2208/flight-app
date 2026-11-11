@@ -1,5 +1,5 @@
 import type { RecentSearch } from '@/types';
-import { getSearchesToDelete, isSameSearch } from './recentSearchUtils';
+import { getSearchesToDelete, isSameSearch } from '../recentSearchUtils';
 
 function makeSearch(id: number, overrides: Partial<RecentSearch> = {}): RecentSearch {
   return {

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import { useAppDispatch, useAppSelector } from '@/app/hooks';
 import { LoginScreen } from '@/features/auth/LoginScreen';
-import { selectIsLoggedIn, selectIsRestoring, sessionRestored } from '@/features/auth/authSlice';
+import { selectIsLoggedIn, selectIsRestoring, sessionRestored } from '@/features/auth/store/authSlice';
 import { loadSession } from '@/features/auth/session';
 import { MainTabs } from './MainTabs';
 import type { RootStackParamList } from './types';

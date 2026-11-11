@@ -1,6 +1,6 @@
 import type { RecentSearch, SearchParams } from '@/types';
 
-export const MAX_RECENT_SEARCHES = 10;
+export const MAX_RECENT_SEARCHES = 8;
 
 export function isSameSearch(a: SearchParams, b: SearchParams): boolean {
   return (

@@ -10,13 +10,17 @@ export const authApi = api.injectEndpoints({
       async queryFn({ email, password }, _api, _extraOptions, baseQuery) {
         const result = await baseQuery({
           url: '/users',
-          params: { email: email.trim().toLowerCase() },
+          params: { email: email.trim().toLowerCase(), password },
         });
 
         if (result.error) return { error: result.error };
 
-        const record = (result.data as UserRecord[])[0];
-        if (!record || record.password !== password) {
+        const record =
+          Array.isArray(result.data) && result.data.length > 0
+            ? (result.data[0] as UserRecord)
+            : undefined;
+
+        if (!record) {
           return { error: { status: 401, data: 'Invalid email or password' } };
         }
 

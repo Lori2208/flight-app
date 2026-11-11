@@ -1,6 +1,6 @@
 import { createListenerMiddleware } from '@reduxjs/toolkit';
 import { loggedIn, loggedOut } from './authSlice';
-import { clearSession, saveSession } from './session';
+import { clearSession, saveSession } from '../session'; 
 
 export const authListener = createListenerMiddleware();
 

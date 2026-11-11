@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useAppDispatch, useAppSelector } from '@/app/hooks';
 import { ConfirmDialog } from '@/components/ConfirmDialog';
-import { loggedOut, selectCurrentUser } from '@/features/auth/authSlice';
+import { loggedOut, selectCurrentUser } from '@/features/auth/store/authSlice';
 import { api } from '@/services/api';
 import { selectThemeMode, themeModeChanged, type ThemeMode } from '@/theme/themeSlice';
 import { useAppTheme } from '@/theme/useAppTheme';

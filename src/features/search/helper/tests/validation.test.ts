@@ -1,4 +1,4 @@
-import { validateSearch } from './validation';
+import { validateSearch } from './helper/validation';
 
 const valid = {
   origin: 'TIA',

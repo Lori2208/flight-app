@@ -1,13 +1,13 @@
 import { skipToken } from '@reduxjs/toolkit/query/react';
 import { useCallback, useMemo } from 'react';
 import { useAppSelector } from '@/app/hooks';
-import { selectCurrentUser } from '@/features/auth/authSlice';
+import { selectCurrentUser } from '@/features/auth/store/authSlice';
 import type { Flight } from '@/types';
 import {
   useAddFavoriteMutation,
   useGetFavoritesQuery,
   useRemoveFavoriteMutation,
-} from './favoritesApi';
+} from '../api/favoritesApi';
 
 export function useFavorites() {
   const user = useAppSelector(selectCurrentUser);

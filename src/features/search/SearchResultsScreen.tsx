@@ -9,13 +9,14 @@ import {
   View,
 } from 'react-native';
 import { Placeholder } from '@/components/Placeholder';
-import { useFavorites } from '@/features/favorites/useFavorites';
+import { useFavorites } from '@/features/favorites/hooks/useFavorites';
 import { FlightCard } from '@/features/flights/components/FlightCard';
-import { useSearchFlightsQuery } from '@/features/flights/flightsApi';
+import { useSearchFlightsQuery } from '@/features/flights/api/flightsApi';
 import type { HomeScreenProps } from '@/navigation/types';
 import { useAppTheme } from '@/theme/useAppTheme';
 import type { Flight } from '@/types';
-import { formatLongDate } from '@/utils/date';
+import { ResultsEmpty } from './components/ResultsEmpty';
+import { ResultsHeader } from './components/ResultsHeader';
 
 export function SearchResultsScreen({ navigation, route }: HomeScreenProps<'SearchResults'>) {
   const { search } = route.params;
@@ -70,22 +71,13 @@ export function SearchResultsScreen({ navigation, route }: HomeScreenProps<'Sear
       keyExtractor={(flight) => String(flight.id)}
       renderItem={renderItem}
       contentContainerStyle={styles.list}
-      ItemSeparatorComponent={Separator}
-      ListHeaderComponent={
-        flights.length > 0 ? (
-          <Text style={[styles.header, { color: colors.textSecondary }]}>
-            {flights.length} {flights.length === 1 ? 'flight' : 'flights'} ·{' '}
-            {formatLongDate(search.departureDate)}
-          </Text>
-        ) : undefined
-      }
-      ListEmptyComponent={
-        <Placeholder title="No flights found">
-          <Text style={[styles.emptyText, { color: colors.textSecondary }]}>
-            Try another date or route.
-          </Text>
-        </Placeholder>
-      }
+      ItemSeparatorComponent={<View style={styles.separator} />}
+     ListHeaderComponent={
+     flights.length > 0 ? (
+    <ResultsHeader count={flights.length} departureDate={search.departureDate} />
+  ) : undefined
+}
+      ListEmptyComponent={<ResultsEmpty />}
       refreshing={isFetching && !isLoading}
       onRefresh={refetch}
     />
@@ -100,6 +92,3 @@ const styles = StyleSheet.create({
   emptyText: { textAlign: 'center' },
 });
 
-function Separator() {
-  return <View style={styles.separator} />;
-}

@@ -5,15 +5,15 @@ import { useCallback, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useAppSelector } from '@/app/hooks';
 import { DateField } from '@/components/DateField';
-import { selectCurrentUser } from '@/features/auth/authSlice';
+import { selectCurrentUser } from '@/features/auth/store/authSlice';
 import type { HomeScreenProps } from '@/navigation/types';
 import { useAppTheme } from '@/theme/useAppTheme';
 import type { RecentSearch } from '@/types';
 import { addDays, toISODate } from '@/utils/date';
 import { AirportPicker } from './components/AirportPicker';
 import { RecentSearchList } from './components/RecentSearchList';
-import { useAddRecentSearchMutation, useGetRecentSearchesQuery } from './recentSearchesApi';
-import { validateSearch } from './validation';
+import { useAddRecentSearchMutation, useGetRecentSearchesQuery } from './api/recentSearchesApi';
+import { validateSearch } from './helper/validation';
 
 export function HomeScreen({ navigation }: HomeScreenProps<'Home'>) {
   const { colors } = useAppTheme();

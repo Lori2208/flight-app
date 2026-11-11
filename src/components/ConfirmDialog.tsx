@@ -73,8 +73,8 @@ export function ConfirmDialog({
               <Text style={[styles.buttonText, { color: colors.onPrimary }]}>{confirmLabel}</Text>
             </Pressable>
           </View>
+          </Pressable>
         </Pressable>
-      </Pressable>
     </Modal>
   );
 }

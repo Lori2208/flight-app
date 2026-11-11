@@ -5,7 +5,7 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { SelectField } from '@/components/SelectField';
 import { TextField } from '@/components/TextField';
 import { useAppTheme } from '@/theme/useAppTheme';
-import { findAirport, searchAirports } from '../airports';
+import { findAirport, searchAirports } from '../helper/airports';
 
 type Props = {
   label: string;
